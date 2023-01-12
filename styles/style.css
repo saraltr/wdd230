@@ -1,7 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Kanit&family=Roboto&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Kanit&family=Roboto&display=swap");
 
 h1, h2, h3{
-    font-family: 'Kanit', Arial, Helvetica, sans-serif;
+    font-family: "Kanit", Arial, Helvetica, sans-serif;
 }
 
 body {
