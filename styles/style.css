@@ -1,14 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit&family=Roboto&display=swap');
+
+h1, h2, h3{
+    font-family: 'Kanit', Arial, Helvetica, sans-serif;
+}
+
 body {
     margin: 0 auto;
-    max-width: 750px;
+    max-width: 1000px;
+    width: auto;
     box-shadow: 0px 10px 10px #000000d7;
-    font-family: Arial, Helvetica, sans-serif;
     font-size: 1.3em;
+    font-family: 'Roboto', arial, sans-serif;
 }
 
 header {
-    padding: 1rem;
-    background-color: #4a4e69;
+    padding: 2rem;
+    background-color: #5f658e;
     display: flex;
     align-items: center;
     justify-content: flex-start;
@@ -21,7 +28,7 @@ h1 {
 }
 
 h2 {
-    color: #4a4e69 ;
+    color: #5f658e;
     border-bottom: 2px solid black;
 }
 
@@ -34,14 +41,13 @@ h2 {
 }
 
 main a {
-    color: #4a4e69;
+    color: #5f658e;
     text-decoration: none;
 }
 
 main a:hover {
     color: #aba3aa;
 }
-
 
 main {
     display: block;
@@ -54,13 +60,13 @@ ul {
     border-bottom: 2px solid black;
     padding-bottom: 20px;
 }
-
+ 
 footer {
     font-size: 1em;
-    background-color: #4a4e69;
+    background-color: #5f658e;
     color: white;
     text-align: center;
-    padding: 1em;
+    padding: 2em;
 }
 
 footer a {
