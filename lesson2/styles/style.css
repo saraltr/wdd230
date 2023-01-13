@@ -104,4 +104,7 @@ footer a {
         display: block;
 	}
 
+    section{
+        margin: 15px;
+    }
 }
