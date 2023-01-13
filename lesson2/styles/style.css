@@ -15,7 +15,7 @@ body {
 }
 
 header, footer {
-    padding: 1em;
+    padding: 0.5em;
     background-color: #5f658e;
     text-align: center;
     color: #F8F4F1;
@@ -61,10 +61,13 @@ section h3{
 }
 
 img{
-    max-width : 400px;
+    max-width : 350px;
     width: 100%;
     height: auto;
-    margin: 5px;
+}
+
+p{
+    text-align: start;
 }
 
 
