@@ -2,6 +2,7 @@
 
 h1, h2, h3{
     font-family: "Kanit", Arial, Helvetica, sans-serif;
+    padding: 10px;
 }
 
 body {
@@ -15,7 +16,7 @@ body {
 }
 
 header, footer {
-    padding: 0.5em;
+    padding: 1em;
     background-color: #5f658e;
     text-align: center;
     color: #F8F4F1;
@@ -35,19 +36,21 @@ main {
 
 section{
     background-color: #aba3aa7a;
-    padding: 10px;
     border-radius: 10px;
     text-align: center;
+    border: solid 2px #515677;
 }
 
 section h2{
     color: #F8F4F1;
     background-color: #5f658e;
     margin-top: -3px ;
+    border-radius: 10px;
+
 }
+
 section h3{
     color: #515677;
-
 }
 
 .box_one{
@@ -64,10 +67,12 @@ img{
     max-width : 350px;
     width: 100%;
     height: auto;
+    padding: 10px 10px 0 10px;
 }
 
 p{
     text-align: start;
+    padding: 0 10px 10px 10px;
 }
 
 
@@ -75,6 +80,7 @@ a {
     color: #5f658e;
     text-decoration: underline;
     text-align: center;
+    padding: 10px;
 }
 
 footer a {
