@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Kanit&family=Roboto&display=swap");
+/* @import url("https://fonts.googleapis.com/css2?family=Kanit&family=Roboto&display=swap"); */
 
 h1, h2, h3{
     font-family: "Kanit", Arial, Helvetica, sans-serif;
@@ -11,18 +11,18 @@ body {
     box-shadow: 0px 10px 10px #000000d7;
     font-size: 1.2em;
     font-family: 'Roboto', arial, sans-serif;
-    box-shadow: 0px 10px 10px #000000d7;
+    font-size: 16px;
 }
 
 header, footer {
     padding: 0.5em;
-    background-color: #5f658e;
+    background-color: #5d50a0;
     text-align: center;
     color: #F8F4F1;
 }
 
 header{
-    text-shadow: 2px 2px 3px #515677;
+    text-shadow: 2px 2px 3px #3443a9;
 }
 
 main {
@@ -41,14 +41,14 @@ section{
 
 section h2{
     color: #F8F4F1;
-    background-color: #5f658e;
+    background-color: #5d50a0;
     margin-top: -3px ;
     border-radius: 5px;
     padding: 1em;
 
 }
 section h3{
-    color: #515677;
+    color: #5d50a0;
 }
 
 
@@ -76,43 +76,11 @@ p{
 
 
 section a {
-    color: #5f658e;
+    color: #3f4b9a;
     text-decoration: underline;
     padding: 1em;
 }
 
 footer a {
     color: #f2e9e4;
-}
-
-/* medium view**/
-@media screen and (min-width:60em) and (max-width:90em) {
-	main {
-        display: grid;
-		grid-template-columns: repeat(2, 1fr);
-	}
-
-    .box_one{
-        grid-column: 1/2;
-    }
-    .box_two{
-        grid-column: 2/3;
-    }
-    .box_three{
-        grid-column: 1/3;
-    }
-}
-/* small view**/
-@media screen and (max-width:59em) {
-	main {
-        display: block;
-	}
-
-    section{
-        margin: 15px;
-    }
-
-    a{
-        font-size:medium;
-    }
 }

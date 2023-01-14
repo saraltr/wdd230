@@ -1,0 +1,17 @@
+/* medium view**/
+@media screen and (min-width:60em) and (max-width:90em) {
+	main {
+        display: grid;
+		grid-template-columns: repeat(2, 1fr);
+	}
+
+    .box_one{
+        grid-column: 1/2;
+    }
+    .box_two{
+        grid-column: 2/3;
+    }
+    .box_three{
+        grid-column: 1/3;
+    }
+}

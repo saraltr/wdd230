@@ -1,0 +1,14 @@
+/* small view**/
+@media screen and (max-width:59em) {
+	main {
+        display: block;
+	}
+
+    section{
+        margin: 15px;
+    }
+
+    section a{
+        font-size:medium;
+    }
+}
