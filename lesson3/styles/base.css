@@ -90,7 +90,11 @@ section a{
 
 table{
     border: solid 0.5px #002D72;
-    width: 100%;
+    word-break: break-word;
+
+}
+.colors{
+    display: table
 }
 .colors th, .typo th{
     background-color: #709ad8;
