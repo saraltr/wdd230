@@ -1,0 +1,39 @@
+/* Desktop Views *******/
+@media only screen and (min-width: 60em) {
+    nav ul{
+        display: flex;
+        list-style: none;
+        text-align: center;
+    }
+
+    nav ul li{
+        flex: 1 1 auto;
+    }
+
+    nav ul a{
+        display: block;
+        padding: 1.5em;
+    }
+
+    main{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .first-section{
+        grid-column: 1/2;
+        grid-row: 1/2;
+
+    }
+    .second-section{
+        grid-column: 2/3;
+        grid-row: 1/2;
+
+    }
+    .third-section{
+        grid-column: 3/4;
+        grid-row: 1/2;
+
+    }
+}
+

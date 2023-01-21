@@ -4,7 +4,7 @@ h1, h2, h3{
 
 body {
     margin: 0 auto;
-    max-width: 1200px;
+    max-width: fit-content;
     width: auto;
     box-shadow: 0px 10px 10px #000000d7;
     font-size: 1.3em;
