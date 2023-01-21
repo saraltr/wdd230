@@ -1,7 +1,10 @@
+*{
+    margin: 0;
+
+}
+
 body{
-    max-width: 1500px;
     margin: 0 auto;
-    max-width: fit-content;
     width: auto;
 }
 
@@ -14,29 +17,40 @@ nav{
     flex-direction: column;
 }
 body{
-    /* text-align: center; */
-    background-color: #a6b7d2;
+    background-color: #c9d3e4;
 }
-nav a:hover{
+nav ul li a:hover{
     background-color: #E8E8E3;
     color: #002D72;
 }
-h1{
-    font-family: 'Cormorant Garamond', serif;
-    font-weight: 700;
-    font-size: 3rem;
-    text-align: center;
+
+h1, h2, h3{
+    font-family: 'DM Serif Display', serif;
     color: #002D72;
+    padding: 20px;
 }
+
+h1{
+    font-size: 2.2em;
+    text-align: center;
+}
+
 h2{
-    font-family: 'Cormorant Garamond', serif;
-    font-weight: 400;
-    font-size: 2rem;
+    font-size: 1.5em;
 }
+
+h3{
+    font-size: 1em;
+}
+
 p, a, ul, footer, section{
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Sofia Sans', sans-serif;
     font-weight: 200;
     font-size: 1.2rem;
+}
+
+p{
+    padding: 20px;
 }
 nav ul{
     display: block;
@@ -54,6 +68,7 @@ nav ul a{
 .active{
     color: #ba1c1c;
 }
+
 a{
     text-decoration: none;
     color: #E8E8E3;
@@ -68,9 +83,44 @@ section{
     margin: 1em;
 }
 
+section a{
+    color: #002D72;
+    padding: 20px;
+}
+
 table{
     border: solid 0.5px #002D72;
     width: 100%;
+}
+.colors th, .typo th{
+    background-color: #709ad8;
+    
+}
+.colors td{
+    color: #E8E8E3;
+}
+
+.primary{
+    background-color: #002D72;
+}
+.secondary{
+    background-color: #c9d3e4;
+    color: black;
+}
+.accent1{
+    background-color: #ba1c1c;
+}
+.accent2{
+    background-color: #d57d5d;
+}
+
+.heading{
+    font-family: 'DM Serif Display', serif;
+}
+
+.colored-para{
+    background-color: #002D72;
+    color: #E8E8E3;
 }
 
 td, th {
@@ -79,7 +129,7 @@ td, th {
 }
 
 tr{
-    background-color: #a6b7d2;
+    background-color: #c9d3e4;
 }
 
 img{

@@ -35,5 +35,8 @@
         grid-row: 1/2;
     }
 
+    .typo-section{
+        grid-column: 2/4;
+    }
 }
 
