@@ -72,3 +72,8 @@ footer {
 footer a {
     color: #f2e9e4;
 }
+
+video{
+
+    max-width: 900px;
+}
