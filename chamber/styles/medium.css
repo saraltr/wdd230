@@ -62,8 +62,6 @@
 
     }
     #lastModified{
-        border-top: solid 2px white;
-        padding: 2em;
         grid-column: 1/4;
         grid-row: 3/4;
         text-align: center;

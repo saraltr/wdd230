@@ -33,7 +33,10 @@ p, a, ul{
     font-size: 0.875em;
 }
 
-
+a{
+    text-decoration: none;
+    color: white;
+}
 body{
     width: auto;
 }
@@ -135,6 +138,10 @@ img.logo{
     padding: 20px;
 }
 
+#lastModified{
+    border-top: solid 2px rgba(255, 255, 255, 0.7);
+    padding: 2em;
+}
 section{
     background-color: var(--secondary-color);
     margin: 1rem;
@@ -151,6 +158,6 @@ section{
 
 footer{
     background-color: var(--primary-color);
-    color: white;
+    color: rgba(255, 255, 255, 0.873);
     margin: 0;
 }
