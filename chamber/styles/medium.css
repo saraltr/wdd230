@@ -32,9 +32,20 @@
 
     footer{
         display: grid;
-        grid-template-columns: repeat(3, 1fr);
+        grid-template-columns: repeat(1fr, 0.5fr, 1fr);
         padding: 2em;
+        text-align: start;
     }
+
+    footer a{
+        color: white;
+        text-decoration: none;
+    }
+
+    footer i{
+        color: var(--accent1-color);
+    }
+
     .site_info{
         grid-column: 1/2;
         display: flex;
@@ -42,8 +53,6 @@
         align-items: center;
         grid-row: 1/2;
         padding: 2em;
-
-
     }
 
     .contact{
@@ -57,6 +66,7 @@
         padding: 2em;
         grid-column: 1/4;
         grid-row: 3/4;
+        text-align: center;
     }
 
 }
