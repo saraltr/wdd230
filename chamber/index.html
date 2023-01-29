@@ -16,55 +16,71 @@
     </head>
 <body>
     <header>
-        <img class="logo" src="images/bigger-logo-transparent.png" alt="vincennes chamber logo">
-        <div class="chamber_name">
-            <h1>Vincennes</h1>
-            <h2>Chamber of Commerce</h2>
+        <div class="mainNav">
+            <img class="logo" src="images/bigger-logo-transparent.png" alt="vincennes chamber logo">
+            <div class="chamber_name">
+                
+                <h1>Vincennes</h1>
+                <h2>Chamber of Commerce</h2>
+            </div>
+            <div class="faIcons">
+                <a href="https://www.facebook.com/" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                <a href="https://www.linkedin.com/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+            </div>
+            <nav>
+                <button id="hamburgerBtn">
+                    <span>&#9776;</span> <span>X</span>
+                </button>
+                <ul id="primaryNav">
+                    <li class="active"><a href="#">Home</a></li>
+                    <li><a href="#">Discover</a></li>
+                    <li><a href="#">Directory</a></li>
+                    <li><a href="#">Join</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
         </div>
-        <div class="faIcons">
-            <i class="fa-brands fa-facebook"></i>
-            <i class="fa-brands fa-linkedin"></i>
-        </div>
-        <nav>
-            <button id="hamburgerBtn"><span>&#9776;</span> <span>X</span></button>
-            <ul id="primaryNav">
-                <li class="active"><a href="#">Home</a></li>
-                <li><a href="#">Discover</a></li>
-                <li><a href="#">Directory</a></li>
-                <li><a href="#">Join</a></li>
-                <li><a href="#">Contact</a></li>
-            </ul>
-        </nav>
         <div class="date">
-            <span id="currentdate">date</span>
+            <span id="currentdate"></span>
         </div>
     </header>
 
     <main>
-        <section>
+        <section class="hero">
             <p>Hero with site name and call to action</p>
         </section>
-        <section>
+        <section class="event">
             <p>event</p>
         </section>
-        <section>
+        <section class="weather">
             <p>weather</p>
         </section>
-        <section>
+        <section class="news">
             <p>News Release</p>
         </section>
-        <section>
-            <p>spotlight</p>
+        <section class="spotlight">
+            <div> <p>Spotlights 1</p></div>
+            <div> <p>Spotlights 2</p></div>
+        </section>
+        <section class="join">
+            <p>join</p>
         </section>
 
     </main>
     
     <footer>
-        <img class="logo" src="images/bigger-logo-transparent.png" alt="vincennes chamber logo">
-        <p>10 rue de Fontenay, Vincennes 94300, France</p>
-        <p>info@vincennesc.org</p>
-        <p>+33 125478963</p>
-        <p>Location</p>
+
+        <div class="site_info">
+            <img class="logo" src="images/bigger-logo-transparent.png" alt="vincennes chamber logo">
+            <p>10 rue de Fontenay, Vincennes 94300, France</p>
+        </div>
+        <div class="contact">
+            
+            <p>info@vincennesc.org</p>
+            <p>+33 125478963</p>
+            <p>Location</p>
+        </div>
+        <div id="lastModified"></div>
 
 
     </footer>
