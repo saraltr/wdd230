@@ -73,10 +73,6 @@ header, footer{
 
     max-width: 30%;
 }
-.chamber_name{
-    /* text-align: justify; */
-    /* font-size: small; */
-}
 
 .mainNav button{
     margin: .2rem 2vw;

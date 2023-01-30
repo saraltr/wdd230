@@ -1,4 +1,4 @@
-@media only screen and (min-width: 37.5em) {
+@media only screen and (min-width: 30em) {
     main{
         display: grid;
         grid-template-columns: repeat(3, 1fr);
@@ -8,6 +8,10 @@
 
     .mainNav {
         text-align: center;
+    }
+
+    a{
+        font-size: large;
     }
     .hero{
         grid-column: 1/4;
