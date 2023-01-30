@@ -67,21 +67,11 @@ header, footer{
     padding: 2em;
 }
 
-.chamber_logo{
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    align-items: center;
+.chamber_logo .logo{
+    max-width: 30%;
 }
 
-.chamber_logo img{
-    grid-column: 1/2;
-}
-.chamber_name{
-    grid-column: 2/3;
-    padding: 20px;
-}
-
-nav button{
+.mainNav button{
     margin: .2rem 2vw;
     background-color: transparent;
     border: solid 2px;
@@ -167,8 +157,11 @@ section{
     height: 15em;
 }
 
-.faIcons{
+.faIcons-min{
     padding: 1em;
+}
+.faIcons-max{
+    display: none;
 }
 .join {
     display: none;

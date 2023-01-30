@@ -1,5 +1,5 @@
 @media only screen and (min-width: 75em) {
-    nav button{
+    .mainNav button{
         display: none;
     }
 
@@ -13,28 +13,24 @@
         border: none;
     }
 
-    .mainNav{
+    header{
         display: grid;
         grid-template-columns: repeat(3, 1fr);
+        align-items: center;
     }
 
-    .mainNav .chamber_logo{
-        display: flex;
+    .mainNav {
+        text-align: center;
+    }
+    .faIcons-min{
+        display: none;
+    }
+    .faIcons-max{
+        display: block;
     }
 
-    .chamber_name{
-        padding: 20px;
-    }
-
-    .mainNav nav{
-        grid-column: 2/3;
-        grid-row: 1/2;
-    }
-
-    .mainNav .faIcons{
-        display: flex;
-        grid-column: 3/4;
-        justify-content:end;
+    .date{
+        grid-column: 1/4;
     }
 
     main{
