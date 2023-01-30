@@ -7,7 +7,7 @@ body{
 }
 
 nav{
-    background-color: #002D72;
+    background-color: #222344 ;
     color: white;
     box-shadow: 0 0 10px black;
     text-align: center;
@@ -19,13 +19,13 @@ body{
 }
 nav ul li a:hover{
     background-color: #E8E8E3;
-    color: #002D72;
+    color: #222344 ;
     text-shadow: #709ad8 1px 1px 2px;
 }
 
 h1, h2, h3{
     font-family: 'DM Serif Display', serif;
-    color: #002D72;
+    color: #222344 ;
     padding: 20px;
 }
 
@@ -66,7 +66,7 @@ nav ul a{
 
 .active{
     color: #E8E8E3;
-    text-shadow: #ba1c1c 1px 1px 2px;
+    text-shadow: #A39ACF 1px 1px 2px;
 }
 
 a{
@@ -78,18 +78,18 @@ section{
     display: block;
     background-color: #e8e8e3d4;
     border-radius: 10px;
-    border: solid 2px #002D72;
+    border: solid 2px #222344 ;
     padding: 20px;
     margin: 1em;
 }
 
 section a{
-    color: #002D72;
+    color: #222344 ;
     padding: 20px;
 }
 
 table{
-    border: solid 0.5px #002D72;
+    border: solid 0.5px #222344 ;
     max-width: 800px;
     width: 100%;
     word-break: break-word;
@@ -107,17 +107,17 @@ table{
 }
 
 .primary{
-    background-color: #002D72;
+    background-color: #222344 ;
 }
 .secondary{
     background-color: #c9d3e4;
     color: black;
 }
 .accent1{
-    background-color: #ba1c1c;
+    background-color: #A39ACF;
 }
 .accent2{
-    background-color: #d57d5d;
+    background-color: #a63d40;
 }
 
 .heading{
@@ -125,7 +125,7 @@ table{
 }
 
 .colored-para{
-    background-color: #002D72;
+    background-color: #222344 ;
     color: #E8E8E3;
 }
 
@@ -143,7 +143,7 @@ img{
 }
 
 footer{
-    background-color: #ba1c1c;
+    background-color: #a63d40;
     padding: 2em;
     display: block;
     text-align: center;

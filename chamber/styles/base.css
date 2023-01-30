@@ -1,8 +1,8 @@
 :root {
-    --primary-color: #14305B ;
+    --primary-color: #222344 ;
     --secondary-color: #c9d3e4 ;
-    --accent1-color: #b11b1b;
-    --accent2-color: #d57d5d;
+    --accent1-color: #A39ACF;
+    --accent2-color: #a63d40;
   
     --heading-font: "DM Serif", serif;
     --paragraph-font: 'Sofia Sans', sans-serif;
@@ -153,10 +153,11 @@ img.logo{
 
 .spotlight_3{display: none;}
 
-#lastModified{
+.base_footer{
     border-top: solid 2px rgba(255, 255, 255, 0.7);
     padding: 2em;
 }
+
 section{
     background-color: var(--secondary-color);
     margin: 1rem;
@@ -178,4 +179,8 @@ footer{
     background-color: var(--primary-color);
     color: rgba(255, 255, 255, 0.873);
     margin: 0;
+}
+
+footer i{
+    color: var(--accent2-color);
 }
