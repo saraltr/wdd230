@@ -1,3 +1,5 @@
+// creates the toggleMenu
+
 function toggleMenu(){
     document.getElementById("primaryNav").classList.toggle("open");
     document.getElementById("hamburgerBtn").classList.toggle("open");
@@ -12,7 +14,7 @@ document.querySelector(
 ).textContent = `Last Modification: ${document.lastModified}`;
 
 
-//Get date
+//get date
 
 const daynames = [
 	"Sunday",

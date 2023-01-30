@@ -11,21 +11,20 @@
 
 h1, h2, h3{
     font-family: var(--heading-font);
+    margin: 0;
 
 }
 h1{
-    font-size: 1.9em;
     margin: 0;
-
 }
 
 i{
     color: var(--secondary-color);
-    padding: 0.4rem;
+    padding: 0.4em;
 }
 
-h2, i{
-    font-size: 1.4em;
+header i {
+    margin: 0.5em;
 }
 
 p, a, ul{
@@ -47,7 +46,8 @@ body{
     margin: 2rem 0;
     padding: 0.5rem;
     display: block;
-    border: 2px solid white;
+    border-top: 2px solid white;
+    border-bottom: 2px solid white;
 }
 
 
@@ -64,8 +64,22 @@ header, footer{
     align-items: center;
     justify-content: space-around;
     text-align: start;
+    padding: 2em;
 }
 
+.chamber_logo{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+}
+
+.chamber_logo img{
+    grid-column: 1/2;
+}
+.chamber_name{
+    grid-column: 2/3;
+    padding: 20px;
+}
 
 nav button{
     margin: .2rem 2vw;
@@ -108,10 +122,9 @@ nav ul li a:hover{
 }
 
 img.logo{
-    max-width: 5rem;
-    width: 50%;
+    max-width: 150px;
+    width: 100%;
     height: auto;
-    padding: 0.5rem;
     text-align: center;
 }
 
@@ -138,6 +151,8 @@ img.logo{
     padding: 20px;
 }
 
+.spotlight_3{display: none;}
+
 #lastModified{
     border-top: solid 2px rgba(255, 255, 255, 0.7);
     padding: 2em;
@@ -151,6 +166,9 @@ section{
     height: 15em;
 }
 
+.faIcons{
+    padding: 1em;
+}
 .join {
     display: none;
 
