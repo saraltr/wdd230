@@ -182,4 +182,5 @@ footer{
 
 footer i{
     color: var(--accent2-color);
+    padding: 0.5em;
 }
