@@ -18,13 +18,14 @@ h1{
     margin: 0;
 }
 
-i{
-    color: var(--secondary-color);
-    padding: 0.4em;
-}
 
 header i {
     margin: 0.5em;
+    color: var(--secondary-color);
+}
+header i:hover {
+    margin: 0.5em;
+    color: var(--accent2-color);
 }
 
 p, a, ul{
@@ -158,10 +159,14 @@ section{
 }
 
 .faIcons-min{
-    padding: 1em;
+    color: var(--secondary-color);
 }
 .faIcons-max{
     display: none;
+}
+
+.faIcons-min, .faIcons-max{
+    padding: 1em;
 }
 .join {
     display: none;
