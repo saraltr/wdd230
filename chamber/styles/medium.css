@@ -32,7 +32,7 @@
 
     footer .main_footer{
         display: grid;
-        grid-template-columns: repeat(1fr, 0.5fr, 1fr);
+        grid-template-columns: 1fr, 0.5fr, 1fr;
         padding: 2em;
         text-align: start;
     }
@@ -55,6 +55,9 @@
         grid-column: 3/4;
         grid-row: 1/2;
         padding: 2em;
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
 
     }
     #lastModified{
