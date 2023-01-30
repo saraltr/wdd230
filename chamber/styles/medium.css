@@ -6,7 +6,9 @@
         margin:  1rem;
     }
 
-
+    .mainNav {
+        text-align: center;
+    }
     .hero{
         grid-column: 1/4;
     }
