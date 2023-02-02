@@ -11,8 +11,12 @@ const list = document.querySelector("ul");
 button.addEventListener("click", () => {
     // make sure the input is not blank before doing the following remaining tasks in this list
 
-    do{
+    // the value will only be added if it is not empty
+    if (input.value !== "") {
+        
         const userChapter = input.value;
+        input.value = "";
+
 
         // create an li element
         const listItem = document.createElement("li")
@@ -37,10 +41,8 @@ button.addEventListener("click", () => {
         list.removeChild(listItem);})
 
         input.focus();
-    } while (input.value !== null);
-
+    }
 }
+
+
 );
-
-input.value = "";
-
