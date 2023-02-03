@@ -254,8 +254,11 @@ section img {
 .join .btn{
     background-color: var(--accent2-color);
     border-radius: 10px;
-    text-align: center;
     border: solid 2px white;
+    margin-top: 10px;
+    padding: 0 70px;
+    Display : inline-block
+
 }
 footer{
     background-color: var(--primary-color);
