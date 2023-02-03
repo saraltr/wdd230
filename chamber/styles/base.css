@@ -8,43 +8,28 @@
     --paragraph-font: 'Sofia Sans', sans-serif;
 }
 
-
-h1, h2, h3{
+h1, h2, h3, h4{
     font-family: var(--heading-font);
-    margin: 0;
-
-}
-h1{
-    margin: 0;
-}
-
-
-header i {
-    margin: 0.5em;
-    color: var(--secondary-color);
-    padding: 0.5em;
-}
-header i:hover {
-    margin: 0.5em;
-    color: var(--accent2-color);
+    color: var(--primary-color);
 }
 
 p, a, ul{
     font-family: var(--paragraph-font);
-    font-size: 0.875em;
+    padding: 1em;
 }
 
-a{
-    text-decoration: none;
-    color: white;
-}
 body{
-    width: auto;
+    font-size: 1em;
+    margin: 0;
+}
+
+main{
+    text-align: center;
 }
 
 .date{
     background-color: var(--secondary-color);
-    color: #002d72;
+    color: var(--primary-color);
     margin: 2rem 0;
     padding: 0.5rem;
     display: block;
@@ -56,7 +41,7 @@ body{
 header, footer{
     background-color: var(--primary-color);
     color: white;
-    padding: 1rem 0;
+    padding: 0.5em 0;
 	margin: 0 auto;
     text-align: center;
 }
@@ -66,26 +51,31 @@ header, footer{
     align-items: center;
     justify-content: space-around;
     text-align: start;
-    padding: 2em;
+}
+.social img, .social2 img {
+    display: flex;
+    flex-direction: column;
+    width: 2em;
+	height: auto;
 }
 
-.chamber_logo .logo{
-
-    max-width: 30%;
+.social2{
+    display: none;
+    align-self: center;
+    justify-self: center;
 }
-
 .mainNav button{
     margin: .2rem 2vw;
     background-color: transparent;
     border: solid 2px;
     font-size: 2rem;
-    color: var(--secondary-color);
+    color: white;
 }
 
 nav ul{
     list-style-type: none;
     padding: 0;
-    margin: 0;
+    /* margin: 0; */
     display: none;
 }
 
@@ -102,7 +92,6 @@ nav ul li a{
     border: 1px solid rgba(0,0,0,0.5);
 }
 
-
 nav ul li.active a{
     background-color: var(--secondary-color);
     color: var(--primary-color);
@@ -114,7 +103,7 @@ nav ul li a:hover{
 }
 
 img.logo{
-    max-width: 150px;
+    max-width: 11em;
     width: 100%;
     height: auto;
     text-align: center;
@@ -139,11 +128,58 @@ img.logo{
 }
 .spotlight div{
     border: 1px solid var(--primary-color);    
-    height: 14.7em;
-    padding: 20px;
+    padding: 0.5em;
 }
 
-.spotlight_3{display: none;}
+.spotlight_1{
+    background-color: var(--primary-color);
+}
+
+.spotlight_1 img{
+    width: 15em;
+}
+.spotlight_1 h2{
+    color: white;
+}
+.spotlight_1 .btn{  
+   background-color: var(--accent2-color);
+   border-radius: 10px;
+   margin-top: 10px;
+   border: solid 2px var(--secondary-color);
+}
+.btn:hover{transform: scale(1.1)
+}
+
+.spotlight_2{position: relative;}
+.spotlight_2 .overlay{
+    position: absolute;
+    background-color: #22234465;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.spotlight_2 h2{
+    color: white;
+    position: absolute;
+    bottom: 1em;
+    left: 1em;
+}
+
+.spotlight_3{
+    display: none;
+    background-color: var(--accent2-color);
+}
+
+.spotlight_3 h2{
+    color: white;
+}
+
+.spotlight_3 p{
+    color: white;
+}
+
 
 .base_footer{
     border-top: solid 2px rgba(255, 255, 255, 0.7);
@@ -152,35 +188,82 @@ img.logo{
 
 section{
     background-color: var(--secondary-color);
-    margin: 1rem;
-    padding: 1rem;
     border-radius: 5px;
     border: solid 2px var(--primary-color);
-    height: 15em;
+    /* height: 15em; */
+    text-align: center;
 }
 
-.faIcons-min{
-    color: var(--secondary-color);
-}
-.faIcons-max{
-    display: none;
+.hero{
+    position: relative;
 }
 
-.faIcons-min, .faIcons-max{
+section img {
+    width: 100%;
+    height: 100%;
+}
+.hero h1 {
+    position: absolute;
+    top: 0.5em;
+    right: 1em;
+    left: 1em;
+    padding: 0.3em;
+    background: #a63d40dc;
+    color: white;
+}
+
+.weather .icon{
+    max-width: 10em;
+    width: 100%;
+    height: auto;
+    text-align: center;
+}
+.weather h3{
+    font-size:large;
+}
+.hero .actionBtn{
+    position: absolute;
+    right: 25px;
+    bottom: 50px;
+}
+
+.actionBtn{
+    background-color: var(--primary-color);
+    padding: 1em;
+    border-radius: 10px;
+    border: solid 2px var(--secondary-color);
+}
+
+.actionBtn:hover{
+    background-color: #a63d40;
+    transform: scale(1.1)
+}
+
+.event a{
+    color: var(--accent2-color);
+}
+
+.event, .news{
     padding: 1em;
 }
+
 .join {
     display: none;
-
 }
 
+.join .btn{
+    background-color: var(--accent2-color);
+    border-radius: 10px;
+    text-align: center;
+    border: solid 2px white;
+}
 footer{
     background-color: var(--primary-color);
     color: rgba(255, 255, 255, 0.873);
     margin: 0;
 }
 
-footer i{
-    color: var(--accent2-color);
-    padding: 0.5em;
+a{
+    text-decoration: none;
+    color: white;
 }

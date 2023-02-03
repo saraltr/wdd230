@@ -10,9 +10,6 @@
         text-align: center;
     }
 
-    a{
-        font-size: medium;
-    }
     .hero{
         grid-column: 1/4;
     }
