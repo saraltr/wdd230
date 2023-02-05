@@ -53,8 +53,6 @@ header, footer{
     text-align: start;
 }
 .social img, .social2 img {
-    display: flex;
-    flex-direction: column;
     width: 2em;
 	height: auto;
 }
@@ -129,6 +127,7 @@ img.logo{
 .spotlight div{
     border: 1px solid var(--primary-color);    
     padding: 0.5em;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
 }
 
 .spotlight_1{
@@ -140,14 +139,6 @@ img.logo{
 }
 .spotlight_1 h2{
     color: white;
-}
-.spotlight_1 .btn{  
-   background-color: var(--accent2-color);
-   border-radius: 10px;
-   margin-top: 10px;
-   border: solid 2px var(--secondary-color);
-}
-.btn:hover{transform: scale(1.1)
 }
 
 .spotlight_2{position: relative;}
@@ -187,10 +178,10 @@ img.logo{
 }
 
 section{
+    margin: 1.5em;
     background-color: var(--secondary-color);
     border-radius: 5px;
     border: solid 2px var(--primary-color);
-    /* height: 15em; */
     text-align: center;
 }
 
@@ -210,6 +201,10 @@ section img {
     padding: 0.3em;
     background: #a63d40dc;
     color: white;
+}
+
+.icons{
+    width: 4.5em;
 }
 
 .weather .icon{
@@ -251,19 +246,11 @@ section img {
     display: none;
 }
 
-.join .btn{
-    background-color: var(--accent2-color);
-    border-radius: 10px;
-    border: solid 2px white;
-    margin-top: 10px;
-    padding: 0 70px;
-    Display : inline-block
-
-}
 footer{
     background-color: var(--primary-color);
     color: rgba(255, 255, 255, 0.873);
     margin: 0;
+    display: block;
 }
 
 a{

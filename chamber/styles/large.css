@@ -21,7 +21,7 @@
     }
 
     .social2{
-        display: block;
+        display: flex;
     }
     nav{
         align-self: center;
