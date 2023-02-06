@@ -40,24 +40,27 @@ main{
 
 .banner{
     display: none;
+    position: fixed;
     text-align: center;
     background-color: var(--accent1-color);
     color: var(--primary-color);
-    position: fixed;
     z-index: 2;
     margin: auto;
     border: solid 2px var(--primary-color);
     top: 0;
     right: 0;
     left: 0;
-    font-size:smaller;
-    height: 3em;
+}
+
+.banner p {
+    padding: 10px;
+    margin: 0;
 }
 
 .close{
     position: absolute;
-    top: 16px;
-    right: 40px;
+    top: 0;
+    right: 1em;
     color: var(--primary-color);
     cursor: pointer;
 }
@@ -70,7 +73,6 @@ header, footer{
     background-color: var(--primary-color);
     color: white;
     padding: 0.5em 0;
-	margin-top: 1em;
 }
 
 .mainNav{
