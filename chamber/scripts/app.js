@@ -16,37 +16,33 @@ document.querySelector(
 
 //get date
 
-const daynames = [
-	"Sunday",
-	"Monday",
-	"Tuesday",
-	"Wednesday",
-	"Thursday",
-	"Friday",
-	"Saturday"
-];
-const months = [
-	"January",
-	"February",
-	"March",
-	"April",
-	"May",
-	"June",
-	"July",
-	"August",
-	"September",
-	"October",
-	"November",
-	"December"
-];
-const d = new Date();
-const dayName = daynames[d.getDay()];
-const monthName = months[d.getMonth()];
-const year = d.getFullYear();
-const fulldate = `${dayName}, ${d.getDate()} ${monthName} ${year}`;
+const months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+
+const days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+
+let d = new Date();
+let year = d.getFullYear();
+let time = d.getTime();
+let day = days[d.getDay()];
+let month = months[d.getMonth()];
+let date = d.getDate();
+
+const fulldate = `${day}, ${date} ${month} ${year} `
 
 document.querySelector("#currentdate").textContent = fulldate;
 
 document.querySelector(
 	"#year"
 ).textContent = year;
+
+
+if (day === "Monday" || day === "Tuesday"){
+	const banner = document.querySelector(".banner");
+	banner.style.display = "block"
+
+	document.querySelector(".close").addEventListener("click", () => {
+		banner.style.display = "none"
+	}
+	)
+
+}
