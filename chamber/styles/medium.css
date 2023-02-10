@@ -26,6 +26,11 @@
         flex-direction: column;
     }
 
+    .spotlight img{
+        width: 70%;
+        height: auto;
+    }
+
     .join{
         display: block;
         grid-column: 1/4;
