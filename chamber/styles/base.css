@@ -189,12 +189,16 @@ img.logo{
     position: absolute;
     top: 2.5em;
     left: 1.2em;
+    background-color: #222344;
+    padding: 0.2em;
 }
 .spotlight_2 a{
     color: white;
     position: absolute;
     top: 7em;
     left: 1.8em;
+    background-color: #222344;
+
 }
 section.spotlight a:hover{
     text-decoration: underline;
@@ -290,6 +294,11 @@ section img {
     padding: 0.5em;
     margin: auto;
     border-radius: 10px;
+}
+
+.btn h2:hover{
+    background-color: #A39ACF;
+
 }
 footer{
     background-color: var(--primary-color);
