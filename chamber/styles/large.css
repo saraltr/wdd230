@@ -1,4 +1,4 @@
-@media only screen and (min-width: 80em) {
+@media only screen and (min-width: 75em) {
     .mainNav button{
         display: none;
     }
@@ -23,6 +23,7 @@
     .social2{
         display: flex;
     }
+
     nav{
         align-self: center;
     }
@@ -34,8 +35,20 @@
     main{
         display: grid;
         grid-template-columns: 1fr 2fr 1fr;
+        position: relative;
     }
 
+    .spotlight img{
+        width: 100%;
+        height: auto;
+        align-items: center;
+    }
+
+    .hero-img{
+        width: 100%;
+        height: 100%;
+        display: flex;
+    }
     .spotlight_3{
         display: block;
     }
