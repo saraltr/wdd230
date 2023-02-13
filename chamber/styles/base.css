@@ -278,12 +278,18 @@ section img {
 }
 
 .actionBtn:hover{
-    background-color: #a63d40;
+    background-color:  var(--accent2-color);
     transform: scale(1.1)
 }
 
 .event a{
-    color: var(--accent2-color);
+    background-color: #222344;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.event a:hover{
+    background-color: var(--accent2-color);
 }
 
 .event, .news, .join{
@@ -303,7 +309,7 @@ section img {
 }
 
 .btn h2:hover{
-    background-color: #A39ACF;
+    background-color: var(--primary-color);
 
 }
 footer{

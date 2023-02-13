@@ -34,15 +34,10 @@
 
     main{
         display: grid;
-        grid-template-columns: 1fr 2fr 1fr;
+        grid-template-columns: repeat(5, 1fr);
         position: relative;
     }
 
-    .spotlight img{
-        width: 100%;
-        height: auto;
-        align-items: center;
-    }
 
     .hero-img{
         width: 100%;
@@ -64,13 +59,16 @@
     }
     .hero{
         height: auto;
-        grid-area: 1/2/3/3;
+        grid-area: 1/2/3/5;
 
     }
     .news{
-        grid-area: 3/2/4/3;
+        grid-area: 3/2/4/5;
     }
     .spotlight{
-        grid-area: 1/3/4/4;
+        display: flex;
+        flex-direction: column;
+        justify-content:space-around;
+        grid-area: 1/5/4/6;
     }
 }

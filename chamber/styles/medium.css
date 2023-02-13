@@ -4,9 +4,6 @@
         grid-template-columns: repeat(3, 1fr);
         gap: 0.5em;
     }
-    body{
-        font-size: 1.3em;
-    }
     .mainNav {
         text-align: center;
     }
@@ -22,12 +19,12 @@
     .spotlight{
         grid-column: 1/4;
         grid-row: 3/4;
-        display: flex;
-        flex-direction: column;
-    }
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+
+        }
 
     .spotlight img{
-        width: 70%;
         height: auto;
     }
 

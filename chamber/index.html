@@ -83,7 +83,11 @@
         <section class="weather">
             <h2>Weather</h2>
             <img class="icon" src="images/clouds_storm_sunny_icon.png" alt="weather icon">
-            <h3>9°C</h3>
+            <p> <span id="currentTemp">9</span></p>
+            <hr>
+            <p> Windspeed: <span id="windspeed">6</span> mph</p>
+            <p> windchill: <span id="windchill"></span> </p>
+
         </section>
         <section class="news">
             <h2>News Release</h2>
@@ -145,8 +149,7 @@
 
 
     </footer>
-    <script src="scripts/app.js">
-
-    </script>
+    <script src="scripts/app.js"></script>
+    <script src="scripts/windchill.js"></script>
 </body>
 </html>
