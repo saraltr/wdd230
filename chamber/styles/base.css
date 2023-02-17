@@ -186,7 +186,7 @@ img.logo{
 
 .spotlight_2 h2{
     position: absolute;
-    top: 2.5em;
+    top: 1em;
     left: 1.2em;
     background-color: #222344;
     padding: 0.2em;
@@ -194,7 +194,7 @@ img.logo{
 .spotlight_2 a{
     color: white;
     position: absolute;
-    top: 7em;
+    top: 5em;
     left: 1.8em;
     background-color: #222344;
 
@@ -206,8 +206,8 @@ section.spotlight a:hover{
     width: 50px;
     height: auto;
     position: absolute;
-    left: 1.5em;
-    top: 2em;
+    left: 0.4em;
+    top: 0;
 }
 .spotlight_3{
     display: none;
@@ -283,13 +283,9 @@ section img {
 }
 
 .event a{
-    background-color: #222344;
     padding: 10px;
     border-radius: 10px;
-}
-
-.event a:hover{
-    background-color: var(--accent2-color);
+    color: var(--primary-color);
 }
 
 .event, .news, .join{

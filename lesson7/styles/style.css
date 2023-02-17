@@ -1,0 +1,16 @@
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+picture img[data-src] {
+    filter: blur(0.2em);
+}
+
+picture img{
+    border: solid 2px rosybrown;
+    filter: blur(0em);
+    transition: filter 0.5s;
+}
+

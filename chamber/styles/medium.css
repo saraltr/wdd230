@@ -20,11 +20,12 @@
         grid-column: 1/4;
         grid-row: 3/4;
         display: grid;
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(2,);
 
         }
 
     .spotlight img{
+        width: 70%;
         height: auto;
     }
 
