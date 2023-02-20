@@ -388,7 +388,6 @@ picture img[data-src] {
 }
 
 picture img{
-    border: solid 2px rosybrown;
     filter: blur(0em);
     transition: filter 0.5s;
 }
