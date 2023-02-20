@@ -382,3 +382,13 @@ tr{
     border-radius:15%;
     transition: 1s ease;
 }
+
+picture img[data-src] {
+    filter: blur(0.2em);
+}
+
+picture img{
+    border: solid 2px rosybrown;
+    filter: blur(0em);
+    transition: filter 0.5s;
+}
