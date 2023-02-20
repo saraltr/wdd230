@@ -357,7 +357,7 @@ section.explore{
 }
 
 .map{
-    width: 75%;
+    width: 80%;
     justify-self: center;
 
 }
@@ -372,4 +372,13 @@ tr{
     text-align: center;
     padding: 8px;
     background-color: var(--accent1-color);
+}
+
+.culture-img{
+    display: none;
+}
+
+.explore picture img:hover{
+    border-radius:15%;
+    transition: 1s ease;
 }
