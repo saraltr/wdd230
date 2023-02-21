@@ -186,16 +186,16 @@ img.logo{
 
 .spotlight_2 h2{
     position: absolute;
-    top: 1em;
-    left: 1.2em;
+    top: 1.8em;
+    left: 2em;
     background-color: #222344;
     padding: 0.2em;
 }
 .spotlight_2 a{
     color: white;
     position: absolute;
-    top: 5em;
-    left: 1.8em;
+    top: 7em;
+    left: 3em;
     background-color: #222344;
 
 }
@@ -206,8 +206,8 @@ section.spotlight a:hover{
     width: 50px;
     height: auto;
     position: absolute;
-    left: 0.4em;
-    top: 0;
+    left: 0.5em;
+    top: 1em;
 }
 .spotlight_3{
     display: none;
