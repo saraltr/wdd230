@@ -383,7 +383,7 @@ tr{
     transition: 1s ease;
 }
 
-picture img[data-src] {
+picture img[data-src], picture img[srcset] {
     filter: blur(0.2em);
 }
 
