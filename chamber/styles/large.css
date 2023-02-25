@@ -73,11 +73,6 @@
   }
 
   form label.top input {
-    display: block;
-    font-size: 1rem;
-    text-align: left;
-    border-radius: 5px;
-    padding: 0.5rem;
     width: 100%;
     max-width: 25rem;
   }
