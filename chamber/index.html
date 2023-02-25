@@ -1,157 +1,213 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Home Page | Vincennes Chamber of Commerce</title>
-        <meta name="description" content="Vincennes Chamber of commerce Home Page">
-        <meta name="author" content="Sara Latorre">
-        <link rel="icon" href="images/favicon.ico" >
-        <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Sofia+Sans&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
-        <link rel="stylesheet" href="styles/base.css">
-        <link rel="stylesheet" href="styles/medium.css">
-        <link rel="stylesheet" href="styles/large.css">
-    </head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home Page | Vincennes Chamber of Commerce</title>
+    <meta
+      name="description"
+      content="Vincennes Chamber of commerce Home Page"
+    />
+    <meta name="author" content="Sara Latorre" />
+    <link rel="icon" href="images/favicon.ico" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Sofia+Sans&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+    />
+    <link rel="stylesheet" href="styles/base.css" />
+    <link rel="stylesheet" href="styles/medium.css" />
+    <link rel="stylesheet" href="styles/large.css" />
+  </head>
+  <body>
     <header>
-        <div class="banner">
-            <p>🤝🏼 Come join us for the chamber meet and greet Wednesday at 7:00 p.m.</p>
-            <div class="close">x</div>
+      <div class="banner">
+        <p
+          >🤝🏼 Come join us for the chamber meet and greet Wednesday at 7:00
+          p.m.</p
+        >
+        <div class="close">x</div>
+      </div>
+      <div class="navGrid">
+        <div class="mainNav">
+          <picture>
+            <a href="index.html">
+              <img
+                class="logo"
+                src="images/vincennes-logo-backgroundcolor.webp"
+                alt="vincennes chamber logo"
+              />
+            </a>
+          </picture>
+          <div class="social">
+            <a href="https://www.facebook.com/" target="_blank">
+              <img
+                src="images/fb_logo_icon.png"
+                loading="lazy"
+                alt="facebook logo"
+              />
+            </a>
+            <a href="https://www.linkedin.com/" target="_blank">
+              <img src="images/linkedin_logo_icon.png" alt="linkedin logo" />
+            </a>
+          </div>
+          <button id="hamburgerBtn">
+            <span>&#9776;</span> <span>X</span>
+          </button>
         </div>
-        <div class="navGrid">
-            <div class="mainNav">
-                <picture>
-                    <a href="index.html">
-                        <img class="logo" src="images/vincennes-logo-backgroundcolor.webp" alt="vincennes chamber logo">
-                    </a>
-                </picture>
-                <div class="social">
-                    <a href="https://www.facebook.com/" target="_blank">
-                        <img src="images/fb_logo_icon.png" loading="lazy" alt="facebook logo">
-                    </a>
-                    <a href="https://www.linkedin.com/" target="_blank">
-                        <img src="images/linkedin_logo_icon.png" alt="linkedin logo">
-                    </a>
-                </div>
-                <button id="hamburgerBtn">
-                    <span>&#9776;</span> <span>X</span>
-                </button>
-            </div>
-            <nav>
-                <ul id="primaryNav">
-                    <li class="active"><a href="index.html">Home</a></li>
-                    <li><a href="discover.html">Discover</a></li>
-                    <li><a href="#">Directory</a></li>
-                    <li><a href="join.html">Join</a></li>
-                    <li><a href="#">Contact</a></li>
-                </ul>
-            </nav>
-            <div class="social2">
-                <a href="https://www.facebook.com/" target="_blank">
-                    <img src="images/fb_logo_icon.png" alt="facebook logo">
-                </a>
-                <a href="https://www.linkedin.com/" target="_blank">
-                    <img src="images/linkedin_logo_icon.png" alt="linkedin logo">
-                </a>
-            </div>
+        <nav>
+          <ul id="primaryNav">
+            <li class="active"><a href="index.html">Home</a></li>
+            <li><a href="discover.html">Discover</a></li>
+            <li><a href="#">Directory</a></li>
+            <li><a href="join.html">Join</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </nav>
+        <div class="social2">
+          <a href="https://www.facebook.com/" target="_blank">
+            <img src="images/fb_logo_icon.png" alt="facebook logo" />
+          </a>
+          <a href="https://www.linkedin.com/" target="_blank">
+            <img src="images/linkedin_logo_icon.png" alt="linkedin logo" />
+          </a>
         </div>
-        <div class="date">
-            <span id="currentdate"></span>
-        </div>
+      </div>
+      <div class="date">
+        <span id="currentdate"></span>
+      </div>
     </header>
 
     <main>
-        <section class="hero">
-            <picture class="hero-img">
-                <source srcset="images/mairie-large.png" media="(min-width: 1000px)">
-                <source srcset="images/mairie-medium.png" media="(min-width: 800px)">
-                <img src="images/mairie-small.png" alt="vincennes city hall">
-            </picture>
-            <h1>Welcome to Vincennes!</h1>
-            <div class="actionBtn">
-                <a href="join/html">Join the chamber</a>
-            </div>
-        </section>
-        <section class="event">
-            <h2>Seasonal Event</h2>
-            <h3> 🎥 Outdoor Cinema </h3>
-            <p>The Château de Vincennes is hosting a free open-air cinema from May 25 to 27, 2023. The appointment is given in the main courtyard of the monument</p>
-            <a href="#info">Discover the program...</a>
-        </section>
-        <section class="weather">
-            <h2>Weather</h2>
-            <div>
-                <img class="icon" src="images/clouds_storm_sunny_icon.png" alt="weather icon">
-                <p> <span id="currentTemp">49</span>°F</p>
-            </div>
-            <hr>
-            <p> Windspeed: <span id="windspeed">4</span> mph</p>
-            <p> windchill: <span id="windchill"></span>°F</p>
-
-        </section>
-        <section class="news">
-            <h2>News Release</h2>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Mollitia explicabo esse, officiis eaque quos enim iusto maiores corrupti dolores ea in, rem quam soluta id natus. Officia, architecto! Dolorem, repellendus?</p>
-        </section>
-        <section class="spotlight">
-            <div class="spotlight_1"> 
-                <h2>City Magazine</h2>
-                <img src="images/cameleo.jpg" alt=" vincennes journal">
-                <hr>
-                <a href="/" target="_blank">vincennesinfo.com</a>
-            </div>
-            <div class="spotlight_2">
-                <img src="images/page_3_cote_groupe_chateau©ot_vincennes-1536x872.jpg" alt="vincennes castle">
-                <div class="overlay"></div>
-                <h2>Tourism office</h2>
-                <img class="icon" src="images/icons8-suitcase-100.png" alt="tourism icon">
-                <a href="https://www.vincennes-tourisme.fr/" target="_blank">vincennes-tourisme.fr</a>
-            </div>
-            <div class="spotlight_3"> 
-                <h2>Consultative Committee</h2>
-                <img src="images/Seminar_general_web.jpg" alt="meeting logo">
-                <p>Meetings to discuss cross-cutting subjects with elected officials, municipal services and local actors to share their expertise</p>
-                <hr>
-                <a href="/">vincennescomitee.fr</a>
-                <p>contact@vincennescomitee.com</p>
-                <p>+33145789632</p>
-            </div>
-        </section>
-        <section class="join">
-            <div class="btn">
-                <a href=join.html>
-                    <h2>Join</h2>
-                </a>
-            </div>
-            <p>Discover how to join the chamber of commerce and how it will benefit your organization! </p>
-        </section>
-
+      <section class="hero">
+        <picture class="hero-img index">
+          <source
+            srcset="images/mairie-large.png"
+            media="(min-width: 1000px)"
+          />
+          <source
+            srcset="images/mairie-medium.png"
+            media="(min-width: 800px)"
+          />
+          <img src="images/mairie-small.png" alt="vincennes city hall" />
+        </picture>
+        <h1>Welcome to Vincennes!</h1>
+        <div class="actionBtn">
+          <a href="join/html">Join the chamber</a>
+        </div>
+      </section>
+      <section class="event">
+        <h2>Seasonal Event</h2>
+        <h3> 🎥 Outdoor Cinema </h3>
+        <p
+          >The Château de Vincennes is hosting a free open-air cinema from May
+          25 to 27, 2023. The appointment is given in the main courtyard of the
+          monument</p
+        >
+        <a href="#info">Discover the program...</a>
+      </section>
+      <section class="weather">
+        <h2>Weather</h2>
+        <div>
+          <img
+            class="icon"
+            src="images/clouds_storm_sunny_icon.png"
+            alt="weather icon"
+          />
+          <p> <span id="currentTemp">49</span>°F</p>
+        </div>
+        <hr />
+        <p> Windspeed: <span id="windspeed">4</span> mph</p>
+        <p> windchill: <span id="windchill"></span>°F</p>
+      </section>
+      <section class="news">
+        <h2>News Release</h2>
+        <p
+          >Lorem ipsum dolor sit, amet consectetur adipisicing elit. Mollitia
+          explicabo esse, officiis eaque quos enim iusto maiores corrupti
+          dolores ea in, rem quam soluta id natus. Officia, architecto! Dolorem,
+          repellendus?</p
+        >
+      </section>
+      <section class="spotlight">
+        <div class="spotlight_1">
+          <h2>City Magazine</h2>
+          <img src="images/cameleo.jpg" alt=" vincennes journal" />
+          <hr />
+          <a href="/" target="_blank">vincennesinfo.com</a>
+        </div>
+        <div class="spotlight_2">
+          <img
+            src="images/page_3_cote_groupe_chateau©ot_vincennes-1536x872.jpg"
+            alt="vincennes castle"
+          />
+          <div class="overlay"></div>
+          <h2>Tourism office</h2>
+          <img
+            class="icon"
+            src="images/icons8-suitcase-100.png"
+            alt="tourism icon"
+          />
+          <a href="https://www.vincennes-tourisme.fr/" target="_blank"
+            >vincennes-tourisme.fr</a
+          >
+        </div>
+        <div class="spotlight_3">
+          <h2>Consultative Committee</h2>
+          <img src="images/Seminar_general_web.jpg" alt="meeting logo" />
+          <p
+            >Meetings to discuss cross-cutting subjects with elected officials,
+            municipal services and local actors to share their expertise</p
+          >
+          <hr />
+          <a href="/">vincennescomitee.fr</a>
+          <p>contact@vincennescomitee.com</p>
+          <p>+33145789632</p>
+        </div>
+      </section>
+      <section class="join">
+        <div class="btn">
+          <a href="join.html">
+            <h2>Join</h2>
+          </a>
+        </div>
+        <p
+          >Discover how to join the chamber of commerce and how it will benefit
+          your organization!
+        </p>
+      </section>
     </main>
-    
+
     <footer>
-        <div class="main_footer">
-            <div class="site_info">
-                <img class="logo" src="images/bigger-logo-transparent.png" alt="vincennes chamber logo">
-                <p>10 rue de Fontenay, Vincennes 94300, France</p>
-            </div>
-            <div class="contact">
-                <a href="https://goo.gl/maps/DP5YBzLdBYCyMoU87" target="_blank">📍 Location Map</a>
-                <p>📧 info@vincennesc.org</p>
-                <p>📞 +(33) 125478963</p>
-            </div>
+      <div class="main_footer">
+        <div class="site_info">
+          <img
+            class="logo"
+            src="images/bigger-logo-transparent.png"
+            alt="vincennes chamber logo"
+          />
+          <p>10 rue de Fontenay, Vincennes 94300, France</p>
         </div>
-        <div class="base_footer">
-            &copy; <span id="year"></span> Vincennes Chamber of Commerce | <strong>Sara Latorre</strong> | BYU-Idaho | WDD 230 Project |
-
-            <div id="lastModified"></div>
+        <div class="contact">
+          <a href="https://goo.gl/maps/DP5YBzLdBYCyMoU87" target="_blank"
+            >📍 Location Map</a
+          >
+          <p>📧 info@vincennesc.org</p>
+          <p>📞 +(33) 125478963</p>
         </div>
-        
+      </div>
+      <div class="base_footer">
+        &copy; <span id="year"></span> Vincennes Chamber of Commerce |
+        <strong>Sara Latorre</strong> | BYU-Idaho | WDD 230 Project |
 
-
+        <div id="lastModified"></div>
+      </div>
     </footer>
     <script src="scripts/app.js"></script>
     <script src="scripts/windchill.js"></script>
-</body>
+  </body>
 </html>
