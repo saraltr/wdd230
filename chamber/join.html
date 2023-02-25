@@ -1,177 +1,251 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Join | Vincennes Chamber of Commerce</title>
-        <meta name="description" content="Vincennes Chamber of commerce Join Page">
-        <meta name="author" content="Sara Latorre">
-        <link rel="icon" href="images/favicon.ico" >
-        <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Sofia+Sans&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
-        <link rel="stylesheet" href="styles/base.css">
-        <link rel="stylesheet" href="styles/medium.css">
-        <link rel="stylesheet" href="styles/large.css">
-    </head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Join | Vincennes Chamber of Commerce</title>
+    <meta
+      name="description"
+      content="Vincennes Chamber of commerce Join Page"
+    />
+    <meta name="author" content="Sara Latorre" />
+    <link rel="icon" href="images/favicon.ico" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Sofia+Sans&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+    />
+    <link rel="stylesheet" href="styles/base.css" />
+    <link rel="stylesheet" href="styles/medium.css" />
+    <link rel="stylesheet" href="styles/large.css" />
+  </head>
+  <body>
     <header>
-        <div class="banner">
-            <p>🤝🏼 Come join us for the chamber meet and greet Wednesday at 7:00 p.m.</p>
-            <div class="close">x</div>
+      <div class="banner">
+        <p
+          >🤝🏼 Come join us for the chamber meet and greet Wednesday at 7:00
+          p.m.</p
+        >
+        <div class="close">x</div>
+      </div>
+      <div class="navGrid">
+        <div class="mainNav">
+          <picture>
+            <a href="index.html">
+              <img
+                class="logo"
+                src="images/vincennes-logo-backgroundcolor.webp"
+                loading="lazy"
+                alt="vincennes chamber logo"
+              />
+            </a>
+          </picture>
+          <div class="social">
+            <a href="https://www.facebook.com/" target="_blank">
+              <img src="images/fb_logo_icon.png" alt="facebook logo" />
+            </a>
+            <a href="https://www.linkedin.com/" target="_blank">
+              <img src="images/linkedin_logo_icon.png" alt="linkedin logo" />
+            </a>
+          </div>
+          <button id="hamburgerBtn">
+            <span>&#9776;</span> <span>X</span>
+          </button>
         </div>
-        <div class="navGrid">
-            <div class="mainNav">
-                <picture>
-                    <a href="index.html">
-                        <img class="logo" src="images/vincennes-logo-backgroundcolor.webp" loading="lazy" alt="vincennes chamber logo">
-                    </a>
-                </picture>
-                <div class="social">
-                    <a href="https://www.facebook.com/" target="_blank">
-                        <img src="images/fb_logo_icon.png" alt="facebook logo">
-                    </a>
-                    <a href="https://www.linkedin.com/" target="_blank">
-                        <img src="images/linkedin_logo_icon.png" alt="linkedin logo">
-                    </a>
-                </div>
-                <button id="hamburgerBtn">
-                    <span>&#9776;</span> <span>X</span>
-                </button>
-            </div>
-            <nav>
-                <ul id="primaryNav">
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="discover.html">Discover</a></li>
-                    <li><a href="#">Directory</a></li>
-                    <li class="active"><a href="join.html">Join</a></li>
-                    <li><a href="#">Contact</a></li>
-                </ul>
-            </nav>
-            <div class="social2">
-                <a href="https://www.facebook.com/" target="_blank">
-                    <img src="images/fb_logo_icon.png" alt="facebook logo">
-                </a>
-                <a href="https://www.linkedin.com/" target="_blank">
-                    <img src="images/linkedin_logo_icon.png" alt="linkedin logo">
-                </a>
-            </div>
+        <nav>
+          <ul id="primaryNav">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="discover.html">Discover</a></li>
+            <li><a href="#">Directory</a></li>
+            <li class="active"><a href="join.html">Join</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </nav>
+        <div class="social2">
+          <a href="https://www.facebook.com/" target="_blank">
+            <img src="images/fb_logo_icon.png" alt="facebook logo" />
+          </a>
+          <a href="https://www.linkedin.com/" target="_blank">
+            <img src="images/linkedin_logo_icon.png" alt="linkedin logo" />
+          </a>
         </div>
-        <div class="date">
-            <span id="currentdate"></span>
-        </div>
+      </div>
+      <div class="date">
+        <span id="currentdate"></span>
+      </div>
     </header>
 
     <main class="discover joinPage">
-        <section class="hero">
-            <picture class="hero-img">
-                <source srcset="images/discover-hero-big.jpg" media="(min-width: 1000px)" loading="lazy">
-                <source srcset="images/discover-hero-medium.jpg" media="(min-width: 800px)" loading="lazy">
-                <img src="images/placeholder.png" data-src="images/garde-repu.jpg" alt="vincennes in summer time">
-                <h1>Join</h1>
-            </picture>
-        </section>
-        <section class="join-page">
-            <h2>Join Us Today!</h2>
-            <form method="get" action="thankyou.html">
-                <fieldset>
-                    <legend>Applicant Information</legend>
-                    <label class="top">First Name* <input type="text" name="fname" required></label>  
-                    <label class="top">Last Name* <input type="text" name="lname" required></label>  
-                    <label class="top">Business Position <input type="text" name="bPosition" pattern="[A-Za-z\s\-]" minlength="7"></label>  
-                    <label class="top">Email* <input type="email" name="email" required placeholder="youremail@gmail.com"></label>  
-                    <label class="top">Phone* <input type="tel" name="phone" required placeholder="123456789"></label>  
-                    <label class="top">Business name* <input type="text" name="businessName" required></label>  
-
-                </fieldset>
-                <fieldset>
-                    <legend>Membership Information</legend>
-                    <div>Membership Level</div>
-                    <label class="sbs">
-                        <input type="radio" name="membership" value="NP Membership"> NP Membership
-                    </label>
-                    <label class="sbs">
-                        <input type="radio" name="membership" value="Bronze Membership"> Bronze Membership
-                    </label>
-                    <label class="sbs">
-                        <input type="radio" name="membership" value="Silver Membership"> Silver Membership
-                    </label>
-                    <label class="sbs">
-                        <input type="radio" name="membership" value="Gold Membership"> Gold Membership
-                    </label>
-                    <label class="top">Business description
-                        <textarea placeholder="Type Here" name="businessDes" cols="30" rows="10"></textarea>
-                    </label>
-                    <input type="hidden" id="date" name="date" value="CurrentTime"> 
-                    <input type="hidden" id="time" name="time" value="CurrentDate">
-                </fieldset>
-                <input type="submit" value="Submit My Application" class="subBtn">
-            </form>
-        </section>
-        <section class="membershipInfo">
-            <h2>Membership Levels Information</h2>
-            <div>
-                <h4>NP Membership - Free</h4>
-                <ol>
-                    <li>No membership fee</li>
-                    <li>Access to networking events</li>
-                    <li>Listing in the chamber's online directory</li>
-                </ol>
-            </div>
-            <div>
-                <h4>Bronze Membership - $90 per year</h4>
-                <ol>
-                    <li>10% discount on chamber-sponsored events</li>
-                    <li>2 free training sessions per year</li>
-                    <li>Mention in the chamber's monthly newsletter</li>
-                    <li>Bronze member logo for use on your website and marketing materials</li>
-                </ol>
-            </div>
-            <div>
-
-                <h4>Silver Membership - $150 per year</h4>
-                <ol>
-                    <li>20% discount on chamber-sponsored events</li>
-                    <li>4 free training sessions per year</li>
-                    <li>Featured spotlight on the chamber's homepage</li>
-                    <li>Silver member logo for use on your website and marketing materials</li>
-                </ol>
-            </div>
-            <div>
-                <h4>Gold Membership - $200 per year</h4>
-                <ol>
-                    <li>30% discount on chamber-sponsored events</li>
-                    <li>5 free training sessions per year</li>
-                    <li>Featured article in the chamber's monthly newsletter</li>
-                    <li>Priority listing in the chamber's online directory</li>
-                    <li>Golden member logo for use on your website and marketing materials</li>
-                </ol>
-            </div>
-        </section>
-
+      <section class="hero">
+        <picture class="hero-img">
+          <source
+            srcset="images/garde-large.jpg"
+            media="(min-width: 1000px)"
+            loading="lazy"
+          />
+          <source
+            srcset="images/garde-medium.jpg"
+            media="(min-width: 800px)"
+            loading="lazy"
+          />
+          <img
+            src="images/placeholder.png"
+            data-src="images/garde-small.jpg"
+            alt="vincennes gardes"
+          />
+          <h1>Join Us Today</h1>
+        </picture>
+      </section>
+      <section class="join-page">
+        <h2>Enter your Information</h2>
+        <form method="get" action="thankyou.html">
+          <fieldset>
+            <legend>Applicant Information</legend>
+            <label class="top"
+              >First Name* <input type="text" name="fname" required
+            /></label>
+            <label class="top"
+              >Last Name* <input type="text" name="lname" required
+            /></label>
+            <label class="top"
+              >Business Position
+              <input
+                type="text"
+                name="bPosition"
+                pattern="[A-Za-z\s\-]"
+                minlength="7"
+            /></label>
+            <label class="top"
+              >Email*
+              <input
+                type="email"
+                name="email"
+                required
+                placeholder="youremail@gmail.com"
+            /></label>
+            <label class="top"
+              >Phone*
+              <input type="tel" name="phone" required placeholder="123456789"
+            /></label>
+            <label class="top"
+              >Business name* <input type="text" name="businessName" required
+            /></label>
+          </fieldset>
+          <fieldset>
+            <legend>Membership Information</legend>
+            <div>Membership Level</div>
+            <label class="sbs">
+              <input type="radio" name="membership" value="NP Membership" /> NP
+              Membership
+            </label>
+            <label class="sbs">
+              <input type="radio" name="membership" value="Bronze Membership" />
+              Bronze Membership
+            </label>
+            <label class="sbs">
+              <input type="radio" name="membership" value="Silver Membership" />
+              Silver Membership
+            </label>
+            <label class="sbs">
+              <input type="radio" name="membership" value="Gold Membership" />
+              Gold Membership
+            </label>
+            <label class="top"
+              >Business description
+              <textarea
+                placeholder="Type Here"
+                name="businessDes"
+                cols="30"
+                rows="10"
+              ></textarea>
+            </label>
+            <input type="hidden" id="date" name="date" value="CurrentTime" />
+            <input type="hidden" id="time" name="time" value="CurrentDate" />
+          </fieldset>
+          <input type="submit" value="Submit My Application" class="subBtn" />
+        </form>
+      </section>
+      <section class="membershipInfo">
+        <h2>Membership Levels Information</h2>
+        <div>
+          <h4>NP Membership - Free</h4>
+          <ol>
+            <li>No membership fee</li>
+            <li>Access to networking events</li>
+            <li>Listing in the chamber's online directory</li>
+          </ol>
+        </div>
+        <div>
+          <h4>Bronze Membership - $90 per year</h4>
+          <ol>
+            <li>10% discount on chamber-sponsored events</li>
+            <li>2 free training sessions per year</li>
+            <li>Mention in the chamber's monthly newsletter</li>
+            <li
+              >Bronze member logo for use on your website and marketing
+              materials</li
+            >
+          </ol>
+        </div>
+        <div>
+          <h4>Silver Membership - $150 per year</h4>
+          <ol>
+            <li>20% discount on chamber-sponsored events</li>
+            <li>4 free training sessions per year</li>
+            <li>Featured spotlight on the chamber's homepage</li>
+            <li
+              >Silver member logo for use on your website and marketing
+              materials</li
+            >
+          </ol>
+        </div>
+        <div>
+          <h4>Gold Membership - $200 per year</h4>
+          <ol>
+            <li>30% discount on chamber-sponsored events</li>
+            <li>5 free training sessions per year</li>
+            <li>Featured article in the chamber's monthly newsletter</li>
+            <li>Priority listing in the chamber's online directory</li>
+            <li
+              >Golden member logo for use on your website and marketing
+              materials</li
+            >
+          </ol>
+        </div>
+      </section>
     </main>
-    
+
     <footer>
-        <div class="main_footer">
-            <div class="site_info">
-                <img class="logo" src="images/bigger-logo-transparent.png" loading="lazy" alt="vincennes chamber logo">
-                <p>10 rue de Fontenay, Vincennes 94300, France</p>
-            </div>
-            <div class="contact">
-                <a href="https://goo.gl/maps/DP5YBzLdBYCyMoU87" target="_blank">📍 Location Map</a>
-                <p>📧 info@vincennesc.org</p>
-                <p>📞 +(33) 125478963</p>
-            </div>
+      <div class="main_footer">
+        <div class="site_info">
+          <img
+            class="logo"
+            src="images/bigger-logo-transparent.png"
+            loading="lazy"
+            alt="vincennes chamber logo"
+          />
+          <p>10 rue de Fontenay, Vincennes 94300, France</p>
         </div>
-        <div class="base_footer">
-            &copy; <span id="year"></span> Vincennes Chamber of Commerce | <strong>Sara Latorre</strong> | BYU-Idaho | WDD 230 Project |
-
-            <div id="lastModified"></div>
+        <div class="contact">
+          <a href="https://goo.gl/maps/DP5YBzLdBYCyMoU87" target="_blank"
+            >📍 Location Map</a
+          >
+          <p>📧 info@vincennesc.org</p>
+          <p>📞 +(33) 125478963</p>
         </div>
-        
+      </div>
+      <div class="base_footer">
+        &copy; <span id="year"></span> Vincennes Chamber of Commerce |
+        <strong>Sara Latorre</strong> | BYU-Idaho | WDD 230 Project |
 
+        <div id="lastModified"></div>
+      </div>
     </footer>
     <script src="scripts/app.js"></script>
     <script src="scripts/lazyloading.js"></script>
-</body>
+  </body>
 </html>

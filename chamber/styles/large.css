@@ -1,75 +1,82 @@
 @media only screen and (min-width: 74em) {
-    .mainNav button{
-        display: none;
-    }
+  .mainNav button {
+    display: none;
+  }
 
-    nav ul#primaryNav{
-        display: flex;
-        margin-left: 2vw;
-    }
+  nav ul#primaryNav {
+    display: flex;
+    margin-left: 2vw;
+  }
 
-    nav ul li a{
-        border: none;
-    }
+  nav ul li a {
+    border: none;
+  }
 
-    .navGrid{
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-    }
-    .social{
-        display: none;
-    }
+  .navGrid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .social {
+    display: none;
+  }
 
-    .social2{
-        display: flex;
-    }
+  .social2 {
+    display: flex;
+  }
 
-    nav{
-        align-self: center;
-    }
+  nav {
+    align-self: center;
+  }
 
-    .navGrid .mainNav .social{
-        grid-column: 3/4;
-    }
+  .navGrid .mainNav .social {
+    grid-column: 3/4;
+  }
 
-    main{
-        display: grid;
-        grid-template-columns: repeat(5, 1fr);
-        position: relative;
-    }
+  main {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    position: relative;
+  }
 
+  .hero-img {
+    width: 100%;
+    height: 100%;
+    display: flex;
+  }
+  .spotlight_3 {
+    display: block;
+  }
 
-    .hero-img{
-        width: 100%;
-        height: 100%;
-        display: flex;
-    }
-    .spotlight_3{
-        display: block;
-    }
+  .event {
+    grid-area: 1/1/2/2;
+  }
+  .weather {
+    grid-area: 2/1/3/2;
+  }
+  .join {
+    grid-area: 3/1/4/2;
+  }
+  .hero {
+    height: auto;
+    grid-area: 1/2/3/5;
+  }
+  .news {
+    grid-area: 3/2/4/5;
+  }
+  .spotlight {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    grid-area: 1/5/4/6;
+  }
 
-    .event{
-        grid-area: 1/1/2/2;
-    }
-    .weather{
-        grid-area: 2/1/3/2;
-    }
-    .join{
-        grid-area: 3/1/4/2;
-    }
-    .hero{
-        height: auto;
-        grid-area: 1/2/3/5;
-
-    }
-    .news{
-        grid-area: 3/2/4/5;
-    }
-    .spotlight{
-        display: flex;
-        flex-direction: column;
-        justify-content:space-around;
-        grid-area: 1/5/4/6;
-    }
-
+  form label.top input {
+    display: block;
+    font-size: 1rem;
+    text-align: left;
+    border-radius: 5px;
+    padding: 0.5rem;
+    width: 100%;
+    max-width: 25rem;
+  }
 }
