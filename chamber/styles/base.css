@@ -1,8 +1,8 @@
 :root {
-    --primary-color: #222344 ;
-    --secondary-color: #c9d3e4 ;
+    --primary-color: #222344;
+    --secondary-color: #c9d3e4;
     --accent1-color: #A39ACF;
-    --accent2-color: #a63d40;
+    --accent2-color: #a8292d;
   
     --heading-font: "DM Serif", serif;
     --paragraph-font: 'Sofia Sans', sans-serif;
@@ -390,4 +390,106 @@ picture img[data-src], picture img[srcset] {
 picture img{
     filter: blur(0em);
     transition: filter 0.5s;
+}
+
+/* form {
+    font: 1em sans-serif;
+    max-width: 320px;
+    text-align: left;
+  }
+
+  
+  input:valid {
+    border: 2px solid black;
+  }
+  
+  input:invalid:required {
+    background-image: linear-gradient(to right, pink, lightgreen);
+  }
+  
+  input[type="text"],
+  input[type="email"],
+  input[type="number"],
+  textarea,
+  fieldset {
+    width: 100%;
+    border: 1px solid #333;
+    box-sizing: border-box;
+  }
+  
+  input:invalid {
+    box-shadow: 0 0 5px 1px red;
+  }
+  
+  input:focus:invalid {
+    box-shadow: none;
+  } */
+
+.joinPage section{
+    background-color: white;
+}
+.membershipInfo ol{
+    text-align: start;
+}
+
+form{
+    margin: 0.5rem;
+    padding: 0.5rem;
+}
+form fieldset{
+    margin: 1rem;
+    border: 2px solid var(--primary-color);
+    border-radius: 10px;
+    padding: .5rem;
+    font-size: large;
+}
+
+form legend{
+    background-color: var(--primary-color);
+    color: white;
+    padding: 0.5rem;
+    border-radius: 5px;
+    margin: 0.5rem 0;
+}
+
+form label.top, form div{
+    display: block;
+    padding-top: 0.5rem;
+    color: var(--accent2-color);
+    text-align: left;
+}
+
+form label.top input{
+    display: block;
+    font-size: 1rem;
+    text-align: left;
+    border-radius: 5px;
+    padding: 0.5rem;
+    width: 100%;
+    max-width: 20rem;
+}
+
+form label textarea{
+    display: block;
+}
+
+form label.top input:required{
+    border: solid 3px var(--accent2-color);
+}
+form label.top input:valid{
+    border: solid 3px var(--primary-color);
+}
+
+form label.sbs{
+    display: block;
+    text-align: start;
+}
+
+form input.subBtn{
+    color: white;
+    background-color: var(--primary-color);
+    padding: 0.8rem;
+    border-radius: 1rem;
+    width: 100%;
+    max-width: 20rem;
 }
