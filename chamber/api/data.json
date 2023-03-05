@@ -1,0 +1,77 @@
+{
+  "companies": [
+    {
+      "image": "images/logo-sg.svg",
+      "imgAlt": "societe generale logo",
+      "company": "Societe Generale",
+      "adress": "51 Avenue DE PARIS  94300  VINCENNES",
+      "phone": "01 41 79 74 61",
+      "url": "https://agences.sg.fr/banque-assurance/particulier/agence-vincennes-centre-id3000304080"
+    },
+    {
+      "image": "images/logo-orange.png",
+      "imgAlt": "societe generale logo",
+      "company": "Orange",
+      "adress": "20 AVENUE DU CHATEAU  94300  VINCENNES",
+      "phone": "09 69 37 03 64",
+      "url": "https://agence.orange.fr/847-boutique-orange-vincennes"
+    },
+    {
+      "image": "images/nido-logo.png",
+      "imgAlt": "Nido logo",
+      "company": "NIDO",
+      "adress": "2 Rue de L'Eglise  94300  VINCENNES",
+      "phone": "01 49 57 09 96",
+      "url": "http://nidorestaurant.fr"
+    },
+    {
+      "image": "images/chalet-logo.png",
+      "imgAlt": "chalet du lac logo",
+      "company": "Chalet du Lac",
+      "adress": "51 Avenue DE PARIS  94300  VINCENNES",
+      "phone": "01 43 28 09 89",
+      "url": "https://chaletdulac.fr/"
+    },
+    {
+      "image": "images/logo-NG.png",
+      "imgAlt": "NG logo",
+      "company": "Next Group",
+      "adress": "9 Avenue DE PARIS  94300  VINCENNES",
+      "phone": "01 41 79 74 61",
+      "url": "https://agences.sg.fr/banque-assurance/particulier/agence-vincennes-centre-id3000304080"
+    },
+    {
+      "image": "images/mm-logo.webp",
+      "imgAlt": "magic makers logo",
+      "company": "Magic Makers",
+      "adress": "19 rue Diderot  94300  VINCENNES",
+      "phone": "07 57 90 54 26",
+      "url": "https://www.magicmakers.fr/lieu/94-vincennes-centre-magic-makers"
+    },
+    {
+      "image": "images/laurent-dc-logo.svg",
+      "imgAlt": "tactis logo",
+      "company": "Laurent Duchêne",
+      "adress": "51 Avenue DE PARIS  94300  VINCENNES",
+      "phone": "01 49 57 05 05",
+      "url": "https://www.tactis.fr/innopolis/"
+    },
+    {
+      "image": "images/millepages.jpg",
+      "imgAlt": "millespages logo",
+      "company": "Millepages",
+      "adress": "174 rue Fontenay  94300  VINCENNES",
+      "phone": "01 43 28 84 30",
+      "url": "https://www.millepages.fr/"
+    },
+
+    {
+      "image": "images/cropped-tactis-logo.png",
+      "imgAlt": "tactis logo",
+      "company": "TACTIS",
+      "adress": "51 Avenue DE PARIS  94300  VINCENNES",
+      "phone": "01 49 57 05 05",
+      "url": "https://www.tactis.fr/innopolis/"
+    }
+  ]
+}

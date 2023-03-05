@@ -19,7 +19,7 @@ p {
 
 .cards {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
 }
 
 section {
@@ -36,7 +36,7 @@ h2 {
 }
 img {
   width: auto;
-  max-width: 350px;
+  max-width: 320px;
   box-shadow: 0 0 30px #777;
   border: 1px solid #333;
   padding: 1rem;

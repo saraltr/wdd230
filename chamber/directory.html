@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Directory | Vincennes Chamber of Commerce</title>
+    <meta
+      name="description"
+      content="Vincennes Chamber of commerce Directory Page"
+    />
+    <meta name="author" content="Sara Latorre" />
+    <link rel="icon" href="images/favicon.ico" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Sofia+Sans&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+    />
+    <link rel="stylesheet" href="styles/base.css" />
+    <link rel="stylesheet" href="styles/medium.css" />
+    <link rel="stylesheet" href="styles/large.css" />
+  </head>
+  <body>
+    <header>
+      <div class="banner">
+        <p
+          >🤝🏼 Come join us for the chamber meet and greet Wednesday at 7:00
+          p.m.</p
+        >
+        <div class="close">x</div>
+      </div>
+      <div class="navGrid">
+        <div class="mainNav">
+          <picture>
+            <a href="index.html">
+              <img
+                class="logo"
+                src="images/vincennes-logo-backgroundcolor.webp"
+                loading="lazy"
+                alt="vincennes chamber logo"
+              />
+            </a>
+          </picture>
+          <div class="social">
+            <a href="https://www.facebook.com/" target="_blank">
+              <img src="images/fb_logo_icon.png" alt="facebook logo" />
+            </a>
+            <a href="https://www.linkedin.com/" target="_blank">
+              <img src="images/linkedin_logo_icon.png" alt="linkedin logo" />
+            </a>
+          </div>
+          <button id="hamburgerBtn">
+            <span>&#9776;</span> <span>X</span>
+          </button>
+        </div>
+        <nav>
+          <ul id="primaryNav">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="discover.html">Discover</a></li>
+            <li class="active"><a href="directory.html">Directory</a></li>
+            <li><a href="join.html">Join</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </nav>
+        <div class="social2">
+          <a href="https://www.facebook.com/" target="_blank">
+            <img src="images/fb_logo_icon.png" alt="facebook logo" />
+          </a>
+          <a href="https://www.linkedin.com/" target="_blank">
+            <img src="images/linkedin_logo_icon.png" alt="linkedin logo" />
+          </a>
+        </div>
+      </div>
+      <div class="date">
+        <span id="currentdate"></span>
+      </div>
+    </header>
+    <main class="discover directory">
+      <section class="hero">
+        <picture class="hero-img">
+          <source
+            srcset="images/home-panorama-1536x400.jpg"
+            media="(min-width: 1000px)"
+            loading="lazy"
+          />
+          <source
+            srcset="images/home-panorama-1536x400.jpg"
+            media="(min-width: 800px)"
+            loading="lazy"
+          />
+          <img
+            src="images/placeholder.png"
+            data-src="images/home-panorama-1536x400.jpg"
+            alt="vincennes gardes"
+          />
+          <h1>Directory</h1>
+        </picture>
+      </section>
+      <section>
+        <div class="menu"
+          ><button id="grid">⏹️Grid</button>
+          <button id="list">📄List</button>
+        </div>
+        <div id="container"> </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="main_footer">
+        <div class="site_info">
+          <img
+            class="logo"
+            src="images/bigger-logo-transparent.png"
+            loading="lazy"
+            alt="vincennes chamber logo"
+          />
+          <p>10 rue de Fontenay, Vincennes 94300, France</p>
+        </div>
+        <div class="contact">
+          <a href="https://goo.gl/maps/DP5YBzLdBYCyMoU87" target="_blank"
+            >📍 Location Map</a
+          >
+          <p>📧 info@vincennesc.org</p>
+          <p>📞 +(33) 125478963</p>
+        </div>
+      </div>
+      <div class="base_footer">
+        &copy; <span id="year"></span> Vincennes Chamber of Commerce |
+        <strong>Sara Latorre</strong> | BYU-Idaho | WDD 230 Project |
+
+        <div id="lastModified"></div>
+      </div>
+    </footer>
+    <script src="scripts/app.js"></script>
+    <script src="scripts/lazyloading.js"></script>
+    <script src="scripts/directory.js"></script>
+  </body>
+</html>
