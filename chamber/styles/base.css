@@ -393,14 +393,9 @@ tr {
   transition: 1s ease;
 }
 
-picture img[data-src],
-picture img[srcset] {
-  filter: blur(0.2em);
-}
-
 picture img {
   filter: blur(0em);
-  transition: filter 0.5s;
+  transition: filter 0.2s;
 }
 
 /* Join page */
