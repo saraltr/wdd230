@@ -1,0 +1,21 @@
+* {
+  margin: 0 auto;
+}
+
+h1,
+h2 {
+  background-color: #219ebc;
+  color: white;
+  padding: 0.5rem;
+}
+
+body {
+  max-width: 80%;
+  text-align: center;
+  width: auto;
+}
+
+p,
+figure {
+  padding: 0.5rem;
+}
