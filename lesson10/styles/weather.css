@@ -4,13 +4,15 @@
 
 h1,
 h2 {
+  font-size: 24px;
   background-color: #219ebc;
   color: white;
   padding: 0.5rem;
 }
 
 body {
-  max-width: 80%;
+  font-size: medium;
+  max-width: 60%;
   text-align: center;
   width: auto;
 }
