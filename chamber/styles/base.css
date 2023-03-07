@@ -262,15 +262,30 @@ section img {
   width: 4.5em;
 }
 
-.weather .icon {
-  max-width: 10em;
-  width: 100%;
-  height: auto;
-  text-align: center;
+.weather {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
 }
-.weather h3 {
-  font-size: large;
+
+.weather p,
+figure figcaption {
+  font-size: 2rem;
+  color: var(--primary-color);
 }
+
+figure figcaption {
+  border-bottom: solid 2px var(--primary-color);
+}
+
+.weatherSection {
+  background-image: url(/chamber/images/weather-back.png);
+  background-size: cover;
+  background-position: center;
+  font-size: 1.2rem;
+  /* background-color: rgb(var(--accent1-color) 0.2); */
+}
+
 .hero .actionBtn {
   position: absolute;
   right: 15px;

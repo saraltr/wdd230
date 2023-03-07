@@ -110,19 +110,18 @@
         >
         <a href="#info">Discover the program...</a>
       </section>
-      <section class="weather">
+      <section class="weatherSection">
         <h2>Weather</h2>
-        <div>
-          <img
-            class="icon"
-            src="images/clouds_storm_sunny_icon.png"
-            alt="weather icon"
-          />
-          <p> <span id="currentTemp">49</span>°F</p>
-        </div>
-        <hr />
-        <p> Windspeed: <span id="windspeed">4</span> mph</p>
-        <p> windchill: <span id="windchill"></span>°F</p>
+        <figure>
+          <div class="weather">
+            <img id="weatherIcon" src="" alt="" />
+            <p><span id="currentTemp"></span>°F</p>
+          </div>
+          <figcaption></figcaption>
+        </figure>
+        <p><strong>🍃Windspeed:</strong><span id="windspeed"></span></p>
+        <p><strong>❄️Windchill:</strong> <span id="windchill"> </span>°F</p>
+        <p><strong>💦Humidity: </strong> <span id="humidity"></span></p>
       </section>
       <section class="news">
         <h2>News Release</h2>
@@ -202,12 +201,14 @@
       </div>
       <div class="base_footer">
         &copy; <span id="year"></span> Vincennes Chamber of Commerce |
-        <strong>Sara Latorre</strong> | BYU-Idaho | WDD 230 Project |
+        <strong>Sara Latorre</strong> | BYU-Idaho | WDD 230 Project | Weather
+        &copy;<a href="https://openweathermap.org/">openweathermap</a>
 
         <div id="lastModified"></div>
       </div>
     </footer>
     <script src="scripts/app.js"></script>
+    <script src="scripts/weatherapi.js"></script>
     <script src="scripts/windchill.js"></script>
   </body>
 </html>
