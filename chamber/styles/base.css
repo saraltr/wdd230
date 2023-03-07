@@ -309,12 +309,6 @@ figure figcaption {
   padding: 1em;
 }
 
-.event {
-  background-image: url(../images/city-deco.png);
-  background-position: bottom;
-  background-repeat: repeat-x;
-}
-
 .join {
   display: none;
 }
