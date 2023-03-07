@@ -1,6 +1,6 @@
 // Api url
 const url =
-  "https://api.openweathermap.org/data/2.5/weather?q=Vincennes,250&appid=73cb8ad5fb9a00832e5798812757f4d3&units=imperial";
+  "https://api.openweathermap.org/data/2.5/weather?q=Vincennes,250,id=6613142&appid=73cb8ad5fb9a00832e5798812757f4d3&units=imperial";
 
 // build the HTML structure dynamically
 

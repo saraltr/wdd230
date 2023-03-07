@@ -15,9 +15,14 @@ body {
   max-width: 60%;
   text-align: center;
   width: auto;
+  border: solid 2px #219ebc;
 }
 
 p,
 figure {
   padding: 0.5rem;
+}
+
+img {
+  width: 5rem;
 }
