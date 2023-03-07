@@ -171,11 +171,13 @@ img.logo {
   color: var(--primary-color);
   background-color: white;
   padding: 0.2rem;
-  border-radius: 8px;
+  border-radius: 5px;
   position: relative;
   bottom: 15px;
 }
-
+.spotlight a:hover {
+  transform: scale(1.1);
+}
 .spotlight_1 img,
 .spotlight_2 img,
 .spotlight_3 img {
@@ -260,11 +262,10 @@ figure figcaption {
 }
 
 .weatherSection {
-  background-image: url(/chamber/images/weather-back.png);
+  background-image: url(../chamber/images/weather-back.png);
   background-size: cover;
   background-position: center;
   font-size: 1.2rem;
-  /* background-color: rgba(var(--secondary-color), 0.8); */
 }
 .weatherSection h2 {
   background-color: var(--primary-color);
@@ -306,7 +307,7 @@ figure figcaption {
 }
 
 .event {
-  background-image: url(/chamber/images/city-deco.png);
+  background-image: url(../chamber/images/city-deco.png);
   background-position: bottom;
   background-repeat: repeat-x;
 }
