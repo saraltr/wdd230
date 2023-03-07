@@ -279,11 +279,19 @@ figure figcaption {
 }
 
 .weatherSection {
-  background-image: url(/chamber/images/weather-back.png);
+  background-image: url(../chamber/images/weather-back.png);
   background-size: cover;
   background-position: center;
   font-size: 1.2rem;
-  /* background-color: rgb(var(--accent1-color) 0.2); */
+  /* background-color: rgba(var(--secondary-color), 0.8); */
+}
+.weatherSection h2 {
+  background-color: var(--primary-color);
+  color: white;
+  padding: 1.2fr;
+  border-radius: 10px;
+  width: 8em;
+  margin: 20px auto;
 }
 
 .hero .actionBtn {
@@ -314,6 +322,12 @@ figure figcaption {
 .news,
 .join {
   padding: 1em;
+}
+
+.event {
+  background-image: url(./chamber/images/city-deco.png);
+  background-position: bottom;
+  background-repeat: repeat-x;
 }
 
 .join {

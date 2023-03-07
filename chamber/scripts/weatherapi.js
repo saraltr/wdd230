@@ -46,7 +46,7 @@ function displayResults(weatherData) {
 
     weatherIcon.setAttribute("src", iconScr);
     weatherIcon.setAttribute("alt", description);
-    weatherIcon.style.width = "50%";
+    weatherIcon.style.width = "40%";
     captionDesc.innerHTML = `<strong>${description}</strong>`;
   } else {
     // Display an error message if there is no weather data
