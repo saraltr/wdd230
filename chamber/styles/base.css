@@ -262,7 +262,7 @@ figure figcaption {
 }
 
 .weatherSection {
-  /* background-image: url(../chamber/images/weather-back.png); */
+  background-image: url(../images/weather-back.png);
   background-size: cover;
   background-position: center;
   font-size: 1.2rem;
