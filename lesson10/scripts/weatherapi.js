@@ -22,9 +22,6 @@ paragraph.appendChild(span);
 
 paragraph.innerHTML += "&deg;F"; //Adds the degree symbol
 
-const humidity = document.createElement("p");
-const windSpeed = document.createElement("p");
-
 // Create an <h2> element and set its text content
 const h2 = document.createElement("h2");
 h2.textContent = "Current Condition Icon";
@@ -37,13 +34,16 @@ img.setAttribute("id", "weather-icon");
 figure.appendChild(img);
 figure.appendChild(figcaption);
 
+const humidity = document.createElement("p");
+const windSpeed = document.createElement("p");
+
 // Append the elements to the body
 body.appendChild(h1);
 body.appendChild(paragraph);
-body.appendChild(humidity);
-body.appendChild(windSpeed);
 body.appendChild(h2);
 body.appendChild(figure);
+body.appendChild(humidity);
+body.appendChild(windSpeed);
 
 const currentTemp = document.querySelector("#current-temp");
 const weatherIcon = document.querySelector("#weather-icon");
@@ -72,8 +72,6 @@ function displayResults(weatherData) {
     currentTemp.innerHTML = `<strong>${weatherData.main.temp.toFixed(
       0
     )}</strong>`;
-    humidity.innerHTML = `Humidity: ${weatherData.main.humidity}%`;
-    windSpeed.innerHTML = `Windspeed: ${weatherData.wind.speed.toFixed(0)}mps`;
 
     const iconScr = `https://openweathermap.org/img/w/${weatherData.weather[0].icon}.png`;
 
@@ -88,6 +86,10 @@ function displayResults(weatherData) {
     weatherIcon.setAttribute("src", iconScr);
     weatherIcon.setAttribute("alt", description);
     captionDesc.textContent = description;
+    humidity.innerHTML = `<strong>Humidity:</strong> ${weatherData.main.humidity}%`;
+    windSpeed.innerHTML = `<strong>Windspeed:</strong> ${weatherData.wind.speed.toFixed(
+      0
+    )}mps`;
   } else {
     // Display an error message if there is no weather data
     currentTemp.innerHTML = "<strong>Unavailable</strong>";
