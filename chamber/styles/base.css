@@ -157,7 +157,7 @@ img.logo {
   display: block;
 }
 
-.spotlight {
+/* .spotlight {
   padding: 1rem;
   color: white;
 }
@@ -220,7 +220,7 @@ section.spotlight a:hover {
 .spotlight_3 {
   display: none;
   background-color: var(--accent2-color);
-}
+} */
 
 .base_footer {
   border-top: solid 2px rgba(255, 255, 255, 0.7);
@@ -279,7 +279,7 @@ figure figcaption {
 }
 
 .weatherSection {
-  background-image: url(../chamber/images/weather-back.png);
+  background-image: url(images/weather-back.png);
   background-size: cover;
   background-position: center;
   font-size: 1.2rem;

@@ -6,7 +6,8 @@
       "company": "Societe Generale",
       "adress": "51 Avenue DE PARIS  94300  VINCENNES",
       "phone": "01 41 79 74 61",
-      "url": "https://agences.sg.fr/banque-assurance/particulier/agence-vincennes-centre-id3000304080"
+      "url": "https://agences.sg.fr/banque-assurance/particulier/agence-vincennes-centre-id3000304080",
+      "statuts": "gold"
     },
     {
       "image": "images/logo-orange.png",
@@ -14,7 +15,8 @@
       "company": "Orange",
       "adress": "20 AVENUE DU CHATEAU  94300  VINCENNES",
       "phone": "09 69 37 03 64",
-      "url": "https://agence.orange.fr/847-boutique-orange-vincennes"
+      "url": "https://agence.orange.fr/847-boutique-orange-vincennes",
+      "statuts": "silver"
     },
     {
       "image": "images/nido-logo.png",
@@ -22,7 +24,8 @@
       "company": "NIDO",
       "adress": "2 Rue de L'Eglise  94300  VINCENNES",
       "phone": "01 49 57 09 96",
-      "url": "http://nidorestaurant.fr"
+      "url": "http://nidorestaurant.fr",
+      "statuts": "gold"
     },
     {
       "image": "images/chalet-logo.png",
@@ -30,7 +33,8 @@
       "company": "Chalet du Lac",
       "adress": "51 Avenue DE PARIS  94300  VINCENNES",
       "phone": "01 43 28 09 89",
-      "url": "https://chaletdulac.fr/"
+      "url": "https://chaletdulac.fr/",
+      "statuts": "gold"
     },
     {
       "image": "images/logo-NG.png",
@@ -38,7 +42,8 @@
       "company": "Next Group",
       "adress": "9 Avenue DE PARIS  94300  VINCENNES",
       "phone": "01 41 79 74 61",
-      "url": "https://nextgroup.fr/decouvrez-nos-espaces-vincennes"
+      "url": "https://nextgroup.fr/decouvrez-nos-espaces-vincennes",
+      "statuts": "bronze"
     },
     {
       "image": "images/mm-logo.webp",
@@ -46,7 +51,8 @@
       "company": "Magic Makers",
       "adress": "19 rue Diderot  94300  VINCENNES",
       "phone": "07 57 90 54 26",
-      "url": "https://www.magicmakers.fr/lieu/94-vincennes-centre-magic-makers"
+      "url": "https://www.magicmakers.fr/lieu/94-vincennes-centre-magic-makers",
+      "statuts": "silver"
     },
     {
       "image": "images/laurent-dc-logo.svg",
@@ -54,7 +60,8 @@
       "company": "Laurent Duchêne",
       "adress": "51 Avenue DE PARIS  94300  VINCENNES",
       "phone": "01 49 57 05 05",
-      "url": "https://www.laurentduchene.com/"
+      "url": "https://www.laurentduchene.com/",
+      "statuts": "gold"
     },
     {
       "image": "images/millepages.jpg",
@@ -62,7 +69,8 @@
       "company": "Millepages",
       "adress": "174 rue Fontenay  94300  VINCENNES",
       "phone": "01 43 28 84 30",
-      "url": "https://www.millepages.fr/"
+      "url": "https://www.millepages.fr/",
+      "statuts": "gold"
     },
 
     {
@@ -71,7 +79,8 @@
       "company": "TACTIS",
       "adress": "51 Avenue DE PARIS  94300  VINCENNES",
       "phone": "01 49 57 05 05",
-      "url": "https://www.tactis.fr/innopolis/"
+      "url": "https://www.tactis.fr/innopolis/",
+      "statuts": "bronze"
     }
   ]
 }
