@@ -81,6 +81,24 @@
       "phone": "01 49 57 05 05",
       "url": "https://www.tactis.fr/innopolis/",
       "statuts": "bronze"
+    },
+    {
+      "image": "images/lo-resto.png",
+      "imgAlt": "les officiers logo",
+      "company": "Les Officiers",
+      "adress": "3 Avenue de Nogent 94300 Vincennes",
+      "phone": "01 43 28 25 10",
+      "url": "https://www.lesofficiers.fr/",
+      "statuts": "gold"
+    },
+    {
+      "image": "images/el-gringo.png",
+      "imgAlt": "el gringo logo",
+      "company": "El Gringo",
+      "adress": "32 Avenue de Paris  94300  VINCENNES",
+      "phone": "01 43 98 15 22",
+      "url": "https://www.restaurant-elgringo.fr/",
+      "statuts": "bronze"
     }
   ]
 }
