@@ -29,7 +29,7 @@ function displayResults(weatherData) {
   if (weatherData.main) {
     currentTemp.innerHTML = `<strong>${weatherData.main.temp.toFixed(
       0
-    )}</strong>`;
+    )} °F</strong>`;
     humidity.innerHTML = `Humidity: ${weatherData.main.humidity}%`;
     windSpeed.innerHTML = ` ${weatherData.wind.speed.toFixed(0)} mph`;
 
@@ -50,8 +50,8 @@ function displayResults(weatherData) {
   } else {
     // Display an error message if there is no weather data
     currentTemp.innerHTML = "<strong>Unavailable</strong>";
-    weatherIcon.setAttribute("src", "");
-    weatherIcon.setAttribute("alt", "");
+    weatherIcon.setAttribute("src", "none");
+    weatherIcon.setAttribute("alt", "none");
     captionDesc.textContent = "Weather data unavailable.";
   }
 }
