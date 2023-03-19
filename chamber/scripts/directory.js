@@ -51,8 +51,6 @@ function displayCompanies(companies) {
 function displayCompaniesAsTable(companies) {
   const container = document.querySelector("#container");
 
-  container.innerHTML = "";
-
   const table = document.createElement("table");
 
   const headerRow = document.createElement("tr");

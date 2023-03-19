@@ -20,7 +20,6 @@ p,
 a,
 ul {
   font-family: var(--paragraph-font);
-  padding: 0.2em;
 }
 
 body {
@@ -275,7 +274,6 @@ figure figcaption {
   padding: 0.5em;
   border-radius: 10px;
 }
-
 .hero .actionBtn {
   position: absolute;
   right: 15px;
@@ -476,7 +474,6 @@ form input.subBtn {
 
 form input.subBtn:hover {
   background-color: var(--accent1-color);
-  color: var(--primary-color);
   transform: scale(1.1);
 }
 
@@ -551,4 +548,39 @@ form input.subBtn:hover {
   display: block;
   padding: 1rem;
   border-bottom: 1px solid #ddd;
+}
+
+/* contact page */
+
+
+.adress{
+  margin: 20px;
+  text-align: left;
+}
+
+.google-maps {
+min-width: 6rem;
+min-height: 300px;
+width: 100%;
+height: 100%;
+margin-bottom: 1rem;
+}
+.contact form{
+  background-color: white;
+  border-radius: 0.8rem;
+}
+#textArea textarea{
+  color: #222344;
+  max-width: 100rem;
+  width: 100%;
+}
+
+.back-img{
+  display: none;
+}
+
+.contact-img{
+  border-radius: 15rem;
+  width: 10em;
+  margin: 0.5rem;
 }
