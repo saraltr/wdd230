@@ -48,13 +48,6 @@
   .spotlight_3 {
     display: block;
   }
-
-  .news {
-    background-image: url(../images/city-deco.png);
-    background-position: bottom;
-    background-repeat: repeat-x;
-  }
-
   .event {
     grid-area: 1/1/2/2;
   }
