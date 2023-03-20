@@ -12,6 +12,7 @@ async function getData() {
 
 function displayCompanies(companies) {
   const container = document.querySelector("#container");
+  container.innerHTML = "";
 
   companies.forEach((company) => {
     const card = document.createElement("div");
@@ -48,6 +49,7 @@ function displayCompanies(companies) {
 
 function displayCompaniesAsTable(companies) {
   const container = document.querySelector("#container");
+  container.innerHTML = "";
 
   const table = document.createElement("table");
 
@@ -97,12 +99,12 @@ gridbutton.addEventListener("click", () => {
   display.classList.add("grid");
 });
 
-// listbutton.addEventListener("click", () => {
-//   const companies = JSON.parse(localStorage.getItem("companies"));
-//   displayCompaniesAsTable(companies);
-//   display.classList.remove("grid");
-//   display.classList.add("list");
-// });
+listbutton.addEventListener("click", () => {
+  const companies = JSON.parse(localStorage.getItem("companies"));
+  displayCompaniesAsTable(companies);
+  display.classList.remove("grid");
+  display.classList.add("list");
+});
 
 (async function () {
   const response = await fetch(url);

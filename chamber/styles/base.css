@@ -229,12 +229,13 @@ section img {
 }
 .hero h1 {
   position: absolute;
-  top: 0.5em;
+  top: 0.5rem;
   right: 1em;
   left: 1em;
   padding: 0.3em;
   background: #a63d40dc;
   color: white;
+  margin-top: 0;
 }
 
 .icons {
@@ -354,6 +355,7 @@ section.explore {
 
 .coa_logo {
   float: left;
+  width: 7rem;
 }
 
 .explore-info,
@@ -376,12 +378,14 @@ section.explore {
   justify-self: center;
 }
 
-table {
+.demoTable {
   border: solid 0.5px #222344;
   word-break: break-word;
   margin: 20px;
+  color: white;
 }
-tr {
+
+.demoTable tr {
   text-align: center;
   padding: 8px;
   background-color: var(--accent1-color);
@@ -390,15 +394,12 @@ tr {
 .culture-img {
   display: none;
 }
-
-.explore picture img:hover {
+.explore picture img{
   border-radius: 15%;
-  transition: 1s ease;
 }
-
-picture img {
-  filter: blur(0em);
-  transition: filter 0.2s;
+.explore picture img:hover {
+  border-radius: 0;
+  transition: 1s ease;
 }
 
 /* Join page */
@@ -482,6 +483,7 @@ form input.subBtn:hover {
   margin: 1rem;
   border: solid 2px var(--primary-color);
 }
+
 /* directory page */
 
 .menu {

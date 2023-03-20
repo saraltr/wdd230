@@ -11,6 +11,9 @@
   .hero {
     grid-column: 1/4;
   }
+  .hero h1 {
+    top: 2rem;
+  }
   .news {
     grid-column: 1/4;
     grid-row: 2/3;
