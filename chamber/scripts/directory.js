@@ -13,8 +13,6 @@ async function getData() {
 function displayCompanies(companies) {
   const container = document.querySelector("#container");
 
-  container.innerHTML = "";
-
   companies.forEach((company) => {
     const card = document.createElement("div");
     card.classList.add("card");
@@ -95,16 +93,16 @@ function displayCompaniesAsTable(companies) {
 
 gridbutton.addEventListener("click", () => {
   displayCompanies(JSON.parse(localStorage.getItem("companies")));
-  display.classList.add("grid");
   display.classList.remove("list");
+  display.classList.add("grid");
 });
 
-listbutton.addEventListener("click", () => {
-  const companies = JSON.parse(localStorage.getItem("companies"));
-  displayCompaniesAsTable(companies);
-  display.classList.add("list");
-  display.classList.remove("grid");
-});
+// listbutton.addEventListener("click", () => {
+//   const companies = JSON.parse(localStorage.getItem("companies"));
+//   displayCompaniesAsTable(companies);
+//   display.classList.remove("grid");
+//   display.classList.add("list");
+// });
 
 (async function () {
   const response = await fetch(url);
