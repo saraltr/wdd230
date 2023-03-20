@@ -21,7 +21,9 @@ a,
 ul {
   font-family: var(--paragraph-font);
 }
-
+p{
+  padding: 0.5rem;
+}
 body {
   font-size: 1em;
   margin: 0;
@@ -568,7 +570,6 @@ form input.subBtn:hover {
 
 
 .adress{
-  margin: 20px;
   text-align: left;
 }
 
