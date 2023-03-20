@@ -209,7 +209,7 @@ img.logo {
 }
 
 section {
-  margin: 0.5em;
+  margin: 0.4em;
   background-color: var(--secondary-color);
   border-radius: 5px;
   border: solid 2px var(--primary-color);
@@ -222,7 +222,6 @@ section {
 section.hero .hero-img img {
   display: block;
   width: 100%;
-  height: auto;
 }
 
 section img {

@@ -1,4 +1,4 @@
-@media only screen and (min-width: 74em) {
+@media only screen and (min-width: 70em) {
   .mainNav button {
     display: none;
   }
@@ -38,9 +38,9 @@
     position: relative;
   }
 
-  .hero-img {
-    width: 100%;
-    height: 100%;
+  section.hero .hero-img img {
+  width: 100%;
+  object-fit: cover;
   }
   .index {
     display: flex;
