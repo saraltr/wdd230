@@ -383,12 +383,24 @@ section.explore {
   word-break: break-word;
   margin: 20px;
   color: white;
+  text-align: center;
 }
 
-.demoTable tr {
-  text-align: center;
+.demoTable thead th {
   padding: 8px;
+  background-color: var(--primary-color);
+  background-color: var(--primary-color);
+}
+
+.demoTable th{
   background-color: var(--accent1-color);
+}
+.demoTable tbody td{
+  background-color: #9d95d2d0;
+  color: black;
+}
+.demoTable tr:nth-child(even){
+  background-color: #bab5dbd0;
 }
 
 .culture-img {
