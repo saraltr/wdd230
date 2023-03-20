@@ -70,7 +70,10 @@
     justify-content: space-around;
     grid-area: 1/5/4/6;
   }
-
+  .spotlight img {
+    width: 75%;
+    height: auto;
+  }
   form label.top input {
     width: 100%;
     max-width: 25rem;

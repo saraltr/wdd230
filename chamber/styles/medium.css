@@ -25,12 +25,7 @@
     display: grid;
     grid-template-columns: repeat(2);
   }
-
-  .spotlight img {
-    width: 70%;
-    height: auto;
-  }
-
+  
   .join {
     display: block;
     grid-column: 1/4;
