@@ -1,5 +1,5 @@
 :root{
-    --primary-color: #F28482;
+    --primary-color: #bf4341;
     --secondary-color: #FDF5EC;
     --accent1: #437081;
     --accent2: #FF834D;
@@ -46,6 +46,23 @@ p
     font-family: var(--paragraph-font);
     padding: 0.5rem;
 }
+.colors{
+    border: none;
+    display: flex;
+    justify-content: space-evenly;
+}
+.color1{
+    background-color: var(--primary-color);
+}
+.color3{
+    background-color: var(--accent1);
+}
+.color4{
+    background-color: var(--accent2);
+}
+.pDemo{
+    font-family: var(--paragraph-font);
+}
 div{
     background-color: var(--secondary-color);
     border: solid 2px var(--accent1);
@@ -54,10 +71,7 @@ div{
 }
 
 .clients{
-    display: flex;
     border: none;
-    align-items: center;
-    justify-content:space-evenly;
 }
 
 .persona1,
@@ -65,9 +79,7 @@ div{
 {
     display: flex;
     flex-direction: column;
-    min-height: 40rem;
     padding: 0.2rem;
-    height: 100%;
 }
 table{
     border: solid 2px var(--accent1);
@@ -84,4 +96,15 @@ tr td {
 table tbody td{
     background-color: var(--secondary-color);
     color: var(--accent1);
+}
+
+.wireframes{
+    border: none;
+    display: flex;
+    justify-content: space-around;
+}
+
+.map img{
+    width: 40rem;
+    margin: 0.5rem;
 }
