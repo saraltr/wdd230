@@ -101,6 +101,9 @@ table tbody td{
 .wireframes{
     border: none;
 }
+.design img{
+    width: 50%;
+}
 
 .map img{
     width: 40rem;
