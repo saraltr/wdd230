@@ -100,8 +100,6 @@ table tbody td{
 
 .wireframes{
     border: none;
-    display: flex;
-    justify-content: space-around;
 }
 
 .map img{
