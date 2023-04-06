@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Bountiful Fruits Home Page">
+    <title>Home | Bountiful Fruits</title>
+    <link href="https://fonts.googleapis.com/css2?family=Chewy&family=DM+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/medium.css">
+    <link rel="stylesheet" href="styles/large.css">
+</head>
+<body>
+    <main>
+        <header>
+            <div class="navGrid">
+                <div class="mainNav">
+                <picture>
+                    <a href="index.html">
+                    <img
+                        class="logo"
+                        src="images/Bountiful Foods.png"
+                        alt="bountiful foods logo"/>
+                    </a>
+                </picture>
+                <div class="button">
+                <span class="menu">Menu</span>
+                <div class="social">
+                    <a href="https://www.facebook.com/" target="_blank">
+                      <img src="images/facebookwhite.png" alt="facebook logo">  
+                    </a>
+                    <a href="https://www.instagram.com/" target="_blank">
+                       <img src="images/instagramwhite.png" alt="instagram logo"> 
+                    </a>
+                    <a href="https://www.tiktok.com/" target="_blank">
+                       <img src="images/tiktokwhite.png" alt="tiktok logo"> 
+                    </a>
+                </div>
+                <button id="hamburgerBtn">
+                    <span><img src="images/list.png" alt="list icon"></span> <span><img src="images/close.png" alt="close icon"></span>
+                </button>  
+                </div>
+                <nav>
+                    <ul id="primaryNav">
+                        <li class="active"><a href="index.html">Home</a></li>
+                        <li><a href="fresh.html">Fresh</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <section class="hero">
+            <div class="firstcolumn">
+              <h1>Heading</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia labore nihil error dolorum magnam dignissimos corrupti quam cum. Numquam consectetur perferendis quia! Iste vitae esse et necessitatibus dolorem, eaque numquam?</p>  
+            </div>
+            <div class="secondcolumn">
+                <img src="images/fresh-hero.png" alt="summer drink hero image">
+                <div class="action-button">
+                    <a href="">call to action</a>
+                </div>  
+            </div>
+        </section>
+
+        <section class="info">
+            <div>
+                <h2>Enjoy Our Coastal Food Trucks</h2>
+                <p>Join Us for a Delicious Coastal Food Adventure! Our Food Trucks will be on the Road this Summer, Bringing Fresh and Healthy Organic Produce to a Location Near You. Don't Miss Out on the Fun! Whether you are a local resident or a tourist visiting the area, we are committed to providing you with the best possible experience.</p> 
+            </div>
+            <picture>
+                <img src="images/fresh-base.jpg" alt="" loading="lazy">
+            </picture>
+        </section>
+        <section class="container">
+        <h2>Discover the Coastal Beauty of Southern California</h2>
+        <div class="card" id="card">
+            <div class="one">
+            <div>
+                <p>Santa Monica Pier: Situated in Los Angeles, the Santa Monica Pier is a famous landmark that has been showcased in various movies and TV shows. You can enjoy carnival games and rides, explore the aquarium, or take a leisurely stroll along the pier to take in the stunning ocean views. The beach is also a great spot for surfing and volleyball, and we highly recommend stopping by our fruit trucks to refuel with fresh and healthy snacks while enjoying your day in Santa Monica.</p>
+            </div>
+            <picture>
+                <img src="images/matthew-lejune-50hokKYxznc-unsplash.jpg" alt="" loading="lazy">
+            </picture>
+            </div>
+            <div class="two">
+            <div>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatem labore tenetur fuga assumenda quidem, magnam molestias necessitatibus adipisci recusandae. Distinctio delectus commodi vitae dignissimos quas sed eaque corporis aliquid expedita!</p>
+            </div>
+            <picture>
+                <img src="images/ariel-blanco-L1Ix5Q-PKBY-unsplash.jpg" alt="" loading="lazy">
+            </picture>
+            </div>
+        </div>
+        </section>
+        
+        <section class="idk">
+            <div class="meteo">
+                <h2>meteo</h2>
+                <figure>
+                    <div class="weather">
+                        <img id="weatherIcon" src="" alt="">
+                        <h3><span id="currentTemp"></span><h3>
+                    </div>
+                <figcaption></figcaption>
+                </figure>
+          </div>
+            </div>
+            <div class="drinks">
+                <h2>drinks</h2>
+            </div>
+        </section>
+
+        <footer>
+            <img src="images/Bountiful Foods.png" alt="">
+        </footer>
+    </main>
+    <script src="scripts/app.js"></script>
+    <script src="scripts/weatherapi.js"></script>
+</body>
+</html>

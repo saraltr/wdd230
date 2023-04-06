@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fresh | Bountiful Foods</title>
+    <link href="https://fonts.googleapis.com/css2?family=Chewy&family=DM+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/medium.css">
+    <link rel="stylesheet" href="styles/large.css">
+</head>
+<body>
+    <main>
+        <header>
+            <div class="navGrid">
+                <div class="mainNav">
+                <picture>
+                    <a href="index.html">
+                    <img
+                        class="logo"
+                        src="images/Bountiful Foods.png"
+                        alt="bountiful foods logo"/>
+                    </a>
+                </picture>
+                <div class="button">
+                <span class="menu">Menu</span>
+                <div class="social">
+                    <a href="https://www.facebook.com/" target="_blank">
+                      <img src="images/facebookwhite.png" alt="facebook logo">  
+                    </a>
+                    <a href="https://www.instagram.com/" target="_blank">
+                       <img src="images/instagramwhite.png" alt="instagram logo"> 
+                    </a>
+                    <a href="https://www.tiktok.com/" target="_blank">
+                       <img src="images/tiktokwhite.png" alt="tiktok logo"> 
+                    </a>
+                </div>
+                <button id="hamburgerBtn">
+                    <span><img src="images/list.png" alt="list icon"></span> <span><img src="images/close.png" alt="close icon"></span>
+                </button>  
+                </div>
+                <nav>
+                    <ul id="primaryNav">
+                        <li><a href="index.html">Home</a></li>
+                        <li class="active"><a href="fresh.html">Fresh</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+        <section class="hero">
+            <div class="firstcolumn">
+                <h1>Get your own special drink!</h1>
+                <p>Create your own special drink by selecting up to three special fruits from the list below.</p>  
+            </div>
+            <div class="secondcolumn">
+                <img src="images/hero-img.png" alt="">
+            </div>
+        </section>
+
+        <section class="form">
+            <form>
+                <fieldset class="userInfo">
+                    <legend>Personal Information:</legend>
+                    <label for="first-name">First Name:</label>
+                    <input type="text" id="first-name" name="first-name" required><br>
+
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required><br>
+
+                    <label for="phone">Phone Number:</label>
+                    <input type="tel" id="phone" name="phone" required><br>
+                </fieldset>
+
+                <fieldset id="fruits">
+                    <legend>Select Fruits:</legend>
+                    
+                </fieldset>
+                <fieldset>
+                    <legend>Special Instructions</legend>
+                    <textarea name="userText" autocapitalize="sentences" minlength="10" cols="30" rows="10" spellcheck="false"></textarea>
+                </fieldset>
+                <input class="submit" type="submit" value="Create">
+            </form>
+        </section>
+
+        <section class="info userInfo">
+            <h2>Your Selection</h2>
+            <p>Fuits Selected:</p> 
+            <div id="selected-fruits"> 
+            </div>
+            <p id="nutrition-summary"></p> 
+            
+        </section>
+    </main>
+    <script src="scripts/app.js"></script>
+    <script src="scripts/fresh.js"></script>
+</body>
+</html>
