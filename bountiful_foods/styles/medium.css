@@ -1,0 +1,45 @@
+@media only screen and (min-width: 45em){
+    .home-hero{
+        height: 20rem;
+    }
+
+    .promo img{
+        display: block;
+    }
+    .logo,
+    .info img{
+        max-width: 25rem;
+    }
+
+    .info,
+    .container{
+        text-align: center;
+    }
+    .index{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        gap: 1rem;
+    }
+
+    header,
+    .home-hero,
+    .container,
+    footer{
+        grid-column: 1/3;
+    }
+    .cardInfo{
+        flex-direction: column-reverse;
+    }
+    .getContact{
+        grid-column: 2/3;
+    }
+
+    .moreInfo{
+        display: block;
+        text-align: left;
+    }
+
+    .drinks{
+        background-position:center;
+    }
+}

@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="styles/large.css">
 </head>
 <body>
-    <main>
+    <main class="index">
         <header>
             <div class="navGrid">
                 <div class="mainNav">
@@ -50,17 +50,21 @@
                 </nav>
             </div>
         </header>
-        <section class="hero">
-            <div class="firstcolumn">
-              <h1>Heading</h1>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia labore nihil error dolorum magnam dignissimos corrupti quam cum. Numquam consectetur perferendis quia! Iste vitae esse et necessitatibus dolorem, eaque numquam?</p>  
+        <section class="home-hero">
+            <div>
+              <h1>Welcome to Bountiful Fruits!</h1>
+                <p>
+                Experience the natural sweetness of California's organic fruits with every sip</p>  
             </div>
-            <div class="secondcolumn">
-                <img src="images/fresh-hero.png" alt="summer drink hero image">
-                <div class="action-button">
-                    <a href="">call to action</a>
-                </div>  
-            </div>
+        </section>
+
+        <section class="promo">
+            <h2>From Your Imagination to Your Glass - Custom Drinks Made Just for You</h2>
+            <p>With our innovative drink builder, you can select from a wide variety of fresh fruits and ingredients to craft a drink that perfectly matches your tastes. Whether you prefer sweet, tangy, or savory flavors, our drink builder lets you mix and match until you find the perfect combination. You can even add special instructions to make your drink truly unique. Try it today and discover a new favorite drink!</p>
+            <div class="action-button">
+                <a href="fresh.html">Create Your own Drink</a>
+            </div>  
+            <img src="images/fresh-hero.png" alt="">
         </section>
 
         <section class="info">
@@ -69,7 +73,7 @@
                 <p>Join Us for a Delicious Coastal Food Adventure! Our Food Trucks will be on the Road this Summer, Bringing Fresh and Healthy Organic Produce to a Location Near You. Don't Miss Out on the Fun! Whether you are a local resident or a tourist visiting the area, we are committed to providing you with the best possible experience.</p> 
             </div>
             <picture>
-                <img src="images/fresh-base.jpg" alt="" loading="lazy">
+                <img src="images/fresh-base.jpg" alt="fruit truck" loading="lazy">
             </picture>
         </section>
         <section class="container">
@@ -85,7 +89,7 @@
             </div>
             <div class="two">
             <div>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatem labore tenetur fuga assumenda quidem, magnam molestias necessitatibus adipisci recusandae. Distinctio delectus commodi vitae dignissimos quas sed eaque corporis aliquid expedita!</p>
+                <p>Newport Beach: Located in Orange County, Newport Beach is a picturesque coastal town with a wide range of attractions, including beautiful beaches, trendy shops and restaurants, and a bustling marina. It's a great place to surf, paddleboard, or take a sunset cruise.</p>
             </div>
             <picture>
                 <img src="images/ariel-blanco-L1Ix5Q-PKBY-unsplash.jpg" alt="" loading="lazy">
@@ -94,9 +98,9 @@
         </div>
         </section>
         
-        <section class="idk">
+        <section class="cardInfo">
             <div class="meteo">
-                <h2>meteo</h2>
+                <h2>Meteo</h2>
                 <figure>
                     <div class="weather">
                         <img id="weatherIcon" src="" alt="">
@@ -107,15 +111,33 @@
           </div>
             </div>
             <div class="drinks">
-                <h2>drinks</h2>
+                <h2>Drinks</h2>
+                <p> Number of Special Drinks Ordered: <strong><span id="order-count"></span></strong></p>
             </div>
+        </section>
+        <section class="getContact">
+            <h2>Any Question?</h2>
+            <p>Are you curious about our company? Want to get in touch?</p>
+            <div class="action-button">
+                <a href="about.html">Learn more about us</a>
+            </div>
+            <div class="moreInfo">
+                <p>We'd love to hear from you! If you have any questions, comments or feedback, please feel free to reach out to us via phone, email or the contact form below.</p>
+                <p>📞 Phone: 555-1234-5678</p>
+                <p>📧 Email: info@bountifulfoods.com</p>
+                <p>📍 Address: Bountiful Foods 4600 Carlsbad Blvd, Carlsbad, CA 92008</p>
+                <img src="images/organic.png" alt="organic fruits">
+            </div>
+            
         </section>
 
         <footer>
-            <img src="images/Bountiful Foods.png" alt="">
+            <img src="images/Bountiful Foods.png" alt="logo">
         </footer>
     </main>
     <script src="scripts/app.js"></script>
+    <script src="scripts/home.js"></script>
     <script src="scripts/weatherapi.js"></script>
+    <script src="scripts/drinks.js"></script>
 </body>
 </html>

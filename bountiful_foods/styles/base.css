@@ -20,14 +20,12 @@ h3{
     letter-spacing: .2rem;
     color: var(--secondary-color);
     padding: 1rem;
-
 }
 
 p, 
 span,
 a,
-figcaption,
-.info li
+figcaption
 {
     font-family: var(--paragraph-font);
     color: var(--secondary-color);
@@ -44,8 +42,18 @@ main{
 
 .button,
 nav,
-.drinks{
+.drinks,
+.getContact{
     background-color: var(--primary-color);
+}
+
+.getContact{
+  text-align: center;
+  padding-bottom: .5rem;
+}
+
+.moreInfo{
+  display: none;
 }
 
 .button{
@@ -98,7 +106,9 @@ nav ul li a:hover {
   background-color: var(--accent2);
   color: var(--secondary-color);
 }
-
+#hamburgerBtn img{
+  cursor: pointer;
+}
 #hamburgerBtn span:nth-child(1) {
   display: block;
 }
@@ -121,11 +131,34 @@ section{
     margin: 2rem 0;
 }
 
+
+.index h1{
+  text-shadow: 2px 2px 5px var(--accent2);
+  font-size: 3em;
+}
 .hero{
     background-color: var(--primary-color);
     display: grid;
     grid-template-columns: repeat(2,1fr);
     gap: 20px;
+}
+
+.home-hero{
+  background-color: var(--primary-color);
+  background-image: url(../images/hero-background.png);
+  background-size: cover;
+  text-align: center;
+  padding-bottom: .5rem;
+}
+.aboutHero{
+  background-color: var(--primary-color);
+  padding-bottom: 1rem;
+  text-align: center;
+  background-image: url(../images/hero-3.png);
+  background-size:50%;
+  background-repeat: no-repeat;
+  background-position: right;
+  min-height: 8rem;
 }
 
 .hero img{
@@ -145,13 +178,33 @@ a{
     text-decoration: none;
 }
 
-.action-button{
-  background-color: var(--accent1);
-  padding: 1rem;
-  margin: 2rem;
-  border-radius: 20px;
+.promo{
+  text-align: center;
 }
 
+.promo img{
+  display: none;
+}
+section img{
+  width: 100%;
+}
+
+.meteo img{
+  width: 25%;
+}
+.action-button{
+  background-color: var(--accent1);
+  margin: 2rem;
+  padding: 0.5rem;
+  border-radius: 20px;
+}
+.action-button:hover{
+  background-color: var(--secondary-color);
+  color: var(--primary-color);
+}
+.action-button a:hover{
+  color: var(--primary-color);
+}
 .submit{
   background-color: var(--accent1);
   color: var(--secondary-color);
@@ -176,18 +229,42 @@ a{
 
 .info,
 .meteo,
+.contact,
 footer{
     background-color: var(--accent1);
+    padding-bottom: .5rem;
 }
 
-.container{
+.container,
+.history,
+.promo{
     background-color: var(--accent2);
+    padding-bottom: .5rem;
+}
+.container{
+  padding-top: .5rem;
 }
 
-.idk{
+.cardInfo{
     display: flex;
     gap: 1rem;
     justify-content: space-between;
+}
+
+.cardInfo > div {
+  flex-basis: 50%;
+}
+
+.drinks{
+  text-align: center;
+  background-image: url(../images/brooke-lark-HjWzkqW1dgI-unsplash.jpg);
+  background-size: cover;
+}
+
+.meteo{
+  text-align: center;
+  background-image: url(../images/meteo.png);
+  background-size: cover;
 }
 
 .card {
@@ -215,7 +292,13 @@ footer{
   padding: 10px;
 }
 
+.hide {
+  display: none;
+}
 
+.logo{
+  width: 50%;
+}
 /* fresh page */
 
 input:required{
@@ -252,13 +335,53 @@ textarea{
   height: 2rem;
 }
 
-.fruits {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 10px;
-}
-
 .fruits div {
   display: flex;
   align-items: center;
+}
+
+#submit-message{
+  display: none;
+  background-color: var(--accent2);
+  color: var(--secondary-color);
+  padding: .5rem;
+  border-radius: 5px;
+  width: 80%;
+  margin: auto;
+  margin-top: 1rem;
+  text-align: center;
+}
+
+
+.fruitsInfo{
+  background-color: var(--accent1);
+  text-align: center;
+}
+.fruitsInfo ol, 
+.fruitsInfo h3{
+  padding: 0;
+  margin: 0;
+}
+.fruitsInfo ol li{
+  list-style-position: inside;
+}
+
+/* about page */
+
+iframe{
+  width: 100%;
+}
+
+.about section img,
+iframe,
+.index info img,
+.container img,
+.info img,
+.moreInfo img
+{
+  border: solid 2px var(--accent1);
+  text-align: center;
+  width: 90%;
+  display: block;
+  margin: auto;
 }

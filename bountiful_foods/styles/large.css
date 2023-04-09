@@ -1,0 +1,51 @@
+@media only screen and (min-width: 75em){
+    .index{
+        grid-template-columns: repeat(3,1fr);
+        gap: 1fr;
+    }
+
+    .logo{
+        margin: 0 auto;
+        max-width: 20rem;
+    }
+
+    .index img{
+        max-width: 30rem;
+        margin: 0 auto;
+    }
+    header,
+    .home-hero,
+    footer{
+        grid-column: 1/4;
+    }
+
+    .promo{
+        grid-column: 1/3;
+    }
+    .info{
+        grid-column: 1/2;
+    }
+    .getContact{
+        grid-column: 3/4;
+        padding-bottom: 1rem;
+    }
+    .cardInfo{
+        grid-column: 3/4;
+        grid-row: 3/4;
+    }
+    .cardInfo, .container, .info{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .action-button{
+        padding: 1rem;
+        width: 15em;
+        margin: auto;
+        border-radius: 20px;
+    }
+    .container{
+        grid-column: 2/3;
+        grid-row: 4/5;
+    }
+}

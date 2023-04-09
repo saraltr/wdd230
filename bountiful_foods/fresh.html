@@ -49,7 +49,6 @@
                 </nav>
             </div>
         </header>
-
         <section class="hero">
             <div class="firstcolumn">
                 <h1>Get your own special drink!</h1>
@@ -61,7 +60,7 @@
         </section>
 
         <section class="form">
-            <form>
+            <form id="drink-form">
                 <fieldset class="userInfo">
                     <legend>Personal Information:</legend>
                     <label for="first-name">First Name:</label>
@@ -76,23 +75,23 @@
 
                 <fieldset id="fruits">
                     <legend>Select Fruits:</legend>
-                    
                 </fieldset>
                 <fieldset>
                     <legend>Special Instructions</legend>
                     <textarea name="userText" autocapitalize="sentences" minlength="10" cols="30" rows="10" spellcheck="false"></textarea>
                 </fieldset>
-                <input class="submit" type="submit" value="Create">
+                <input class="submit" type="submit" value="Submit your creation!">
             </form>
+            <div id="submit-message">
+            </div>
         </section>
 
-        <section class="info userInfo">
+        <section class="fruitsInfo userInfo">
             <h2>Your Selection</h2>
-            <p>Fuits Selected:</p> 
-            <div id="selected-fruits"> 
-            </div>
+            <h3>Selected Fruits:</h3>
+            <ol id="selected-fruits"> 
+            </ol>
             <p id="nutrition-summary"></p> 
-            
         </section>
     </main>
     <script src="scripts/app.js"></script>
