@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="styles/large.css">
 </head>
 <body>
-    <main>
+    <main class="fresh">
         <header>
             <div class="navGrid">
                 <div class="mainNav">
@@ -52,7 +52,8 @@
         <section class="hero">
             <div class="firstcolumn">
                 <h1>Get your own special drink!</h1>
-                <p>Create your own special drink by selecting up to three special fruits from the list below.</p>  
+                <p>Create your perfect drink with our innovative drink builder! Choose from a wide variety of fresh fruits and ingredients to create a unique flavor that perfectly matches your taste! </p>  
+                <p>With the ability to mix and match until you find the perfect combination, the possibilities are endless. Give it a try today and find your new favorite drink!</p>
             </div>
             <div class="secondcolumn">
                 <img src="images/hero-img.png" alt="">
@@ -82,17 +83,39 @@
                 </fieldset>
                 <input class="submit" type="submit" value="Submit your creation!">
             </form>
-            <div id="submit-message">
-            </div>
         </section>
 
         <section class="fruitsInfo userInfo">
+            <div id="submit-message">
+            </div>
             <h2>Your Selection</h2>
             <h3>Selected Fruits:</h3>
             <ol id="selected-fruits"> 
             </ol>
             <p id="nutrition-summary"></p> 
         </section>
+        <footer>
+            <div class="fotterUp">
+            <img class="logo" src="images/secondlogo.png" alt="logo">
+            <p>Bountiful Foods 4600 Carlsbad Blvd, Carlsbad, CA 92008</p>
+            <div class="social2">
+                    <a href="https://www.facebook.com/" target="_blank">
+                      <img src="images/facebookwhite.png" alt="facebook logo">  
+                    </a>
+                    <a href="https://www.instagram.com/" target="_blank">
+                       <img src="images/instagramwhite.png" alt="instagram logo"> 
+                    </a>
+                    <a href="https://www.tiktok.com/" target="_blank">
+                       <img src="images/tiktokwhite.png" alt="tiktok logo"> 
+                    </a>
+            </div>
+            <div class="footerDown">
+                &copy;<span id="year"></span>| Bountiful Foods | <strong>Sara Latorre</strong> | BYU-Idaho | WDD 230 Project | Weather ©openweathermap
+            <div id="lastModified"></div>
+            </div>  
+            </div>
+        </footer>
+
     </main>
     <script src="scripts/app.js"></script>
     <script src="scripts/fresh.js"></script>

@@ -3,20 +3,37 @@
         grid-template-columns: repeat(3,1fr);
         gap: 1fr;
     }
-
+    .mainNav button {
+        display: none;
+    }
+    
+    nav ul#primaryNav {
+        grid-column: 2/3;
+        display: flex;
+        justify-content: center;
+    }
+    .menu{
+        display: none;
+    }
     .logo{
-        margin: 0 auto;
-        max-width: 20rem;
+        width: 10em;
+    }
+    #primaryNav li{
+        width: 100%;
     }
 
     .index img{
         max-width: 30rem;
         margin: 0 auto;
     }
-    header,
     .home-hero,
+    header,
     footer{
         grid-column: 1/4;
+    }
+    
+    .button{
+        justify-content: center;
     }
 
     .promo{

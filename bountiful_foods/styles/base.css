@@ -25,7 +25,8 @@ h3{
 p, 
 span,
 a,
-figcaption
+figcaption,
+footer
 {
     font-family: var(--paragraph-font);
     color: var(--secondary-color);
@@ -43,7 +44,8 @@ main{
 .button,
 nav,
 .drinks,
-.getContact{
+.getContact,
+footer{
     background-color: var(--primary-color);
 }
 
@@ -123,15 +125,12 @@ nav ul li a:hover {
 }
 
 .social{
-    display: flex;
-    gap: 1.2rem;
+  display: flex;
+  gap: 1.2rem;
 }
-
 section{
-    margin: 2rem 0;
+  margin: 2rem 0;
 }
-
-
 .index h1{
   text-shadow: 2px 2px 5px var(--accent2);
   font-size: 3em;
@@ -229,8 +228,7 @@ section img{
 
 .info,
 .meteo,
-.contact,
-footer{
+.contact{
     background-color: var(--accent1);
     padding-bottom: .5rem;
 }
@@ -299,6 +297,16 @@ footer{
 .logo{
   width: 50%;
 }
+
+footer{
+  text-align: center;
+  padding: 0;
+}
+.footerDown{
+  background-color: var(--accent1);
+  padding: 1rem;
+  margin-top: .5rem;
+}
 /* fresh page */
 
 input:required{
@@ -342,7 +350,7 @@ textarea{
 
 #submit-message{
   display: none;
-  background-color: var(--accent2);
+  background-color: #ff824dbf;
   color: var(--secondary-color);
   padding: .5rem;
   border-radius: 5px;

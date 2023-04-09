@@ -15,13 +15,15 @@
     .container{
         text-align: center;
     }
-    .index{
+    .index,
+    .fresh{
         display: grid;
         grid-template-columns: repeat(2,1fr);
         gap: 1rem;
     }
 
     header,
+    .hero,
     .home-hero,
     .container,
     footer{
