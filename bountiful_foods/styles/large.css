@@ -28,7 +28,9 @@
     }
     .home-hero,
     header,
-    footer{
+    footer,
+    .hero,
+    .aboutHero{
         grid-column: 1/4;
     }
     

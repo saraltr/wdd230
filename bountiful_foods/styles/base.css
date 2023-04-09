@@ -2,7 +2,7 @@
     --primary-color: #bf4341;
     --secondary-color: #FDF5EC;
     --accent1: #437081;
-    --accent2: #FF834D;
+    --accent2: #FA4B00;
 
     --heading-font: "Chewy", cursive;
     --paragraph-font: "DM Sans", sans-serif;
@@ -260,9 +260,14 @@ section img{
 }
 
 .meteo{
-  text-align: center;
   background-image: url(../images/meteo.png);
   background-size: cover;
+  padding: 0;
+  margin: 0;
+}
+
+.meteo h2{
+  text-align: center;
 }
 
 .card {
