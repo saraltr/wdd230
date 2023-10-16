@@ -47,3 +47,17 @@ const fulldate = `${day}, ${date} ${month} ${year} `;
 
 document.querySelector("#year").textContent = year;
 
+const heroImg = "images/hero.png";
+
+const section = document.getElementById("hero-section");
+const placeholder = document.getElementById("hero-placeholder");
+
+// Create a new image element and set the source to the actual image
+const img = new Image();
+img.src = heroImg; // Set the actual image source
+
+// When the actual image is loaded, replace the section background image
+img.onload = function () {
+  section.style.backgroundImage = `url(${img.src})`;
+  placeholder.style.display = "none"; // Hide the placeholder div
+};
