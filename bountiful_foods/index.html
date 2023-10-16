@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Bountiful Fruits Home Page">
     <title>Home | Bountiful Fruits</title>
+    <link rel="icon" href="images/favicon_io/favicon.ico">
     <link href="https://fonts.googleapis.com/css2?family=Chewy&family=DM+Sans&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles/base.css">
     <link rel="stylesheet" href="styles/medium.css">
@@ -17,12 +18,14 @@
             <div class="navGrid">
                 <div class="mainNav">
                 <picture>
-                    <a href="index.html">
-                    <img
-                        class="logo"
-                        src="images/Bountiful Foods.png"
-                        alt="bountiful foods logo"/>
-                    </a>
+                    <div class="logoContainer">
+                      <a href="index.html">
+                        <img
+                            class="logo"
+                            src="images/Bountiful Foods.png"
+                            alt="bountiful foods logo"/>
+                        </a>  
+                    </div>
                 </picture>
                 <div class="button">
                 <span class="menu">Menu</span>
@@ -52,18 +55,17 @@
         </header>
         <section class="home-hero">
             <div>
-              <h1>Welcome to Bountiful Fruits!</h1>
-                <p>
-                Experience the natural sweetness of California's organic fruits with every sip</p>  
+              <h1>Welcome to Bountiful Fruits!</h1> 
+                <p><strong>Experience the natural sweetness of California's organic fruits with every sip</strong></p> 
             </div>
         </section>
 
         <section class="promo">
             <h2>From Your Imagination to Your Glass - Custom Drinks Made Just for You</h2>
+            <p><strong>At Bountiful Fruits, we believe in giving you the power to create the perfect drink that suits your taste.</strong></p>
             <p>With our innovative drink builder, you can select from a wide variety of fresh fruits and ingredients to craft a drink that perfectly matches your tastes. Whether you prefer sweet, tangy, or savory flavors, our drink builder lets you mix and match until you find the perfect combination. You can even add special instructions to make your drink truly unique. Try it today and discover a new favorite drink!</p>
-            <div class="action-button">
-                <a href="fresh.html">Create Your own Drink</a>
-            </div>  
+            <button class="action-button" href="fresh.html">Create Your own Drink</button>
+ 
             <img src="images/fresh-hero.png" alt="">
         </section>
 
@@ -76,43 +78,38 @@
                 <img src="images/fresh-base.jpg" alt="fruit truck" loading="lazy">
             </picture>
         </section>
-        <section class="container">
-        <h2>Discover the Coastal Beauty of Southern California</h2>
-        <div class="card" id="card">
-            <div class="one">
-            <div>
-                <p>Santa Monica Pier: Situated in Los Angeles, the Santa Monica Pier is a famous landmark that has been showcased in various movies and TV shows. You can enjoy carnival games and rides, explore the aquarium, or take a leisurely stroll along the pier to take in the stunning ocean views. The beach is also a great spot for surfing and volleyball, and we highly recommend stopping by our fruit trucks to refuel with fresh and healthy snacks while enjoying your day in Santa Monica.</p>
+
+        <section class="specials">
+            <div class="specials-content">
+              <h2>Today's Specials</h2>
+              <p>Discover our daily specials featuring the freshest and most delicious drinks you can find! Our talented mixologists create unique concoctions each day that you won't want to miss. Whether you're in the mood for a fruity refresher, a creamy indulgence, or a zesty pick-me-up, our specials menu has something for everyone!</p>
+              <button class="specials-button" href="specials.html">View Today's Specials</button>
             </div>
-            <picture>
-                <img src="images/matthew-lejune-50hokKYxznc-unsplash.jpg" alt="" loading="lazy">
-            </picture>
+            <div class="specials-image">
+              <img src="images/rodion-kutsaiev-x4z7GiV5_-0-unsplash.jpg" alt="Today's Specials" loading="lazy">
             </div>
-            <div class="two">
-            <div>
-                <p>Newport Beach: Located in Orange County, Newport Beach is a picturesque coastal town with a wide range of attractions, including beautiful beaches, trendy shops and restaurants, and a bustling marina. It's a great place to surf, paddleboard, or take a sunset cruise.</p>
-            </div>
-            <picture>
-                <img src="images/ariel-blanco-L1Ix5Q-PKBY-unsplash.jpg" alt="" loading="lazy">
-            </picture>
-            </div>
-        </div>
         </section>
         
         <section class="cardInfo">
             <div class="meteo">
                 <h2>Meteo</h2>
-                <figure>
-                    <div class="weather">
+                <section class="weather">
+                    <div class="current">
+                        <h3 id="currentTemp"></h3>
                         <img id="weatherIcon" src="" alt="">
-                        <h3>Current Tempeture: <span id="currentTemp"></span><h3>
                     </div>
-                <figcaption></figcaption>
-                </figure>
-                <p>Humidity:<span id="humidity"></span></p>
-                <h3>three(3) day temperature forecast</h3>
-                <!-- <div class="forecast">
-                    <p>Tomorrow: <span id="tmr"></span></p>
-                </div> -->
+                    <h4 id="desc"></h4>
+                    <div class="currentInfo">
+                       <p>Humidity: <span id="humidity"></span></p>
+                        <p>Max Temp: <span id="max"></span></p> <p>Min Temp: <span id="min"></span>
+                        </p>
+                    </div>
+                </section>
+                <section class="forecastSec">
+                    <h3>Three (3) days temperature forecast:</h3>
+                    <div class="forecast"></div>
+                </section>
+                </div>
           </div>
             </div>
             <div class="drinks">
@@ -120,25 +117,46 @@
                 <p> Number of Special Drinks Ordered: <strong><span id="order-count"></span></strong></p>
             </div>
         </section>
+
+        <section class="container">
+            <h2>Discover the Coastal Beauty of Southern California</h2>
+            <div class="card" id="card">
+                <div class="one">
+                <div>
+                    <p>Santa Monica Pier: Situated in Los Angeles, the Santa Monica Pier is a famous landmark that has been showcased in various movies and TV shows. You can enjoy carnival games and rides, explore the aquarium, or take a leisurely stroll along the pier to take in the stunning ocean views. The beach is also a great spot for surfing and volleyball, and we highly recommend stopping by our fruit trucks to refuel with fresh and healthy snacks while enjoying your day in Santa Monica.</p>
+                </div>
+                <picture>
+                    <img src="images/matthew-lejune-50hokKYxznc-unsplash.jpg" alt="santa monica" loading="lazy">
+                </picture>
+                </div>
+                <div class="two">
+                <div>
+                    <p>Newport Beach: Located in Orange County, Newport Beach is a picturesque coastal town with a wide range of attractions, including beautiful beaches, trendy shops and restaurants, and a bustling marina. It's a great place to surf, paddleboard, or take a sunset cruise.</p>
+                </div>
+                <picture>
+                    <img src="images/ariel-blanco-L1Ix5Q-PKBY-unsplash.jpg" alt="Newport Beach" loading="lazy">
+                </picture>
+                </div>
+            </div>
+        </section>
+
         <section class="getContact">
             <h2>Any Question?</h2>
             <p>Are you curious about our company? Want to get in touch?</p>
-            <div class="action-button">
-                <a href="about.html">Learn more about us</a>
-            </div>
+            <button class="specials-button" href="about.html">Learn more about us</button>
+
             <div class="moreInfo">
                 <p>We'd love to hear from you! If you have any questions, comments or feedback, please feel free to reach out to us via phone, email or the contact form below.</p>
                 <p>📞 Phone: 555-1234-5678</p>
                 <p>📧 Email: info@bountifulfoods.com</p>
                 <p>📍 Address: Bountiful Foods 4600 Carlsbad Blvd, Carlsbad, CA 92008</p>
                 <img src="images/organic.png" alt="organic fruits" loading="lazy">
-            </div>
-            
+            </div>  
         </section>
 
         <footer>
             <div class="fotterUp">
-            <img class="logo" src="images/secondlogo.png" alt="logo">
+            <img class="logo" src="images/secondlogo.png" alt="footer logo">
             <p>Bountiful Foods 4600 Carlsbad Blvd, Carlsbad, CA 92008</p>
             <div class="social2">
                     <a href="https://www.facebook.com/" target="_blank">

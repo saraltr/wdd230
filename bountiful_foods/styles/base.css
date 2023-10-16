@@ -1,8 +1,8 @@
 :root{
-    --primary-color: #bf4341;
-    --secondary-color: #FDF5EC;
+    --primary-color: #BD2B28;
+    --secondary-color: #f1efed;
     --accent1: #437081;
-    --accent2: #FA4B00;
+    --accent2: #d14408;
 
     --heading-font: "Chewy", cursive;
     --paragraph-font: "DM Sans", sans-serif;
@@ -10,12 +10,13 @@
 
 body{
     margin: 0 auto;
-    font-size: 17px;
+    font-size: 18px;
 }
 
 h1,
 h2,
-h3{
+h3,
+h4{
     font-family: var(--heading-font);
     letter-spacing: .2rem;
     color: var(--secondary-color);
@@ -26,7 +27,9 @@ p,
 span,
 a,
 figcaption,
-footer
+footer,
+button,
+ol
 {
     font-family: var(--paragraph-font);
     color: var(--secondary-color);
@@ -44,7 +47,6 @@ main{
 .button,
 nav,
 .drinks,
-.getContact,
 footer{
     background-color: var(--primary-color);
 }
@@ -77,17 +79,27 @@ button,
   background-color: transparent;
   font-size: 2rem;
 }
-#primaryNav{
-    margin: 0;
+
+.logoContainer {
+  background-image: url(../images/fond.png);
+  background-size: cover;
+  background-position: center 50%;
 }
+#primaryNav{
+  margin: 0;
+}
+
 nav ul {
   text-align: center;
   list-style-type: none;
   padding: 0;
-  display: none;
+  max-height: 0; 
+  overflow: hidden; 
+  transition: 0.5s ease-in; 
 }
 
 nav ul.open {
+  max-height: 300px; 
   display: block;
 }
 
@@ -132,7 +144,7 @@ section{
   margin: 2rem 0;
 }
 .index h1{
-  text-shadow: 2px 2px 5px var(--accent2);
+  text-shadow: 4px 4px 5px var(--accent2);
   font-size: 3em;
 }
 .hero{
@@ -142,13 +154,33 @@ section{
     gap: 20px;
 }
 
-.home-hero{
+.home-hero {
   background-color: var(--primary-color);
-  background-image: url(../images/hero-background.png);
+  background-image: url(../images/hero.png);
   background-size: cover;
+  background-position: center 40%;
   text-align: center;
   padding-bottom: .5rem;
 }
+
+.home-hero p {
+  color: var(--secondary-color);
+  font-size: large;
+  font-weight: 400;
+  background-color: #d44240d3;
+  width: 60%;
+  padding: 1rem;
+  margin: 0 auto 2dvb auto;
+}
+
+.home-hero img {
+  /* width: 400px;
+  max-width: 90%; */
+  border: solid 2px var(--primary-color);
+  /* border-radius: 20px; */
+  filter: drop-shadow(0 0 .1rem #FDF5EC);
+}
+
 .aboutHero{
   background-color: var(--primary-color);
   padding-bottom: 1rem;
@@ -177,8 +209,12 @@ a{
     text-decoration: none;
 }
 
-.promo{
+.promo {
+  background-color: var(--accent2);
+  background-image: url(../images/drinks-kobby.jpg);
+  background-size: cover;
   text-align: center;
+  padding: .5rem 0;
 }
 
 .promo img{
@@ -187,23 +223,63 @@ a{
 section img{
   width: 100%;
 }
-
-.meteo img{
-  width: 25%;
+.instructions {
+  text-align: left;
 }
-.action-button{
+
+#clear-icon {
+  filter: brightness(50%) saturate(100%);
+  -webkit-filter: brightness(114%) saturate(400%);
+  -moz-filter: brightness(50%) saturate(100%);
+}
+
+.action-button,
+.specials-button {
+  cursor: pointer;
   background-color: var(--accent1);
-  margin: 2rem;
-  padding: 0.5rem;
+  font-size: large;
+  margin: 1rem;
+  padding: 1rem;
   border-radius: 20px;
 }
-.action-button:hover{
+
+.specials-button {
   background-color: var(--secondary-color);
   color: var(--primary-color);
 }
-.action-button a:hover{
+
+.action-button:hover,
+.specials-button:hover {
+  background-color: var(--secondary-color);
   color: var(--primary-color);
+  transform: scale(1.1);
 }
+
+.specials {
+  display: flex;
+  align-items: center;
+}
+
+.specials-content {
+  background-color: var(--primary-color);
+  flex: 1.5;
+  padding: 1rem;
+}
+
+.specials-image {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  overflow: hidden
+}
+
+.specials-image img {
+  max-width: 110%;
+  max-height: 100%; 
+  height: auto;
+  width: auto; 
+}
+
 .submit{
   background-color: var(--accent1);
   color: var(--secondary-color);
@@ -228,16 +304,18 @@ section img{
 
 .info,
 .meteo,
-.contact{
+.contact, 
+.getContact
+{
     background-color: var(--accent1);
     padding-bottom: .5rem;
 }
 
 .container,
-.history,
-.promo{
+.history
+{
     background-color: var(--accent2);
-    padding-bottom: .5rem;
+    padding-bottom: 2rem;
 }
 .container{
   padding-top: .5rem;
@@ -245,6 +323,7 @@ section img{
 
 .cardInfo{
     display: flex;
+    flex-direction: column-reverse;
     gap: 1rem;
     justify-content: space-between;
 }
@@ -268,6 +347,60 @@ section img{
 
 .meteo h2{
   text-align: center;
+}
+
+.weather {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+}
+
+.forecast {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#main-icon {
+  max-width: 35%;
+  margin: 0;
+}
+
+
+#weather-icon,
+#clear-icon,
+#main-icon
+{
+  text-align: center;
+}
+
+.current {
+  grid-column: 1/2;
+  display: flex;
+  flex-direction: row-reverse;
+  align-items:start;
+  justify-content: left;
+}
+
+#currentTemp {
+  font-size: larger;
+}
+#desc {
+  align-self: center;
+  padding: 17px;
+  margin-right: 10px;
+}
+.currentInfo {
+  grid-column: 1/3;
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+h4,
+.forecastSec h3 {
+  background-color: var(--secondary-color);
+  color: var(--accent1);
+  text-align: center;
+  padding: 15px;
 }
 
 .card {
