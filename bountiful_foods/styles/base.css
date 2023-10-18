@@ -267,30 +267,13 @@ section img{
   color: var(--primary-color);
   transform: scale(1.1);
 }
-
 .specials {
-  display: flex;
-  align-items: center;
+  background-image: url(../images/brooke-lark-qdyBKWSzpSI-unsplash.jpg) 
 }
-
 .specials-content {
-  background-color: var(--primary-color);
-  flex: 1.5;
-  padding: 1rem;
-}
-
-.specials-image {
-  flex: 1;
-  display: flex;
-  align-items: center;
-  overflow: hidden
-}
-
-.specials-image img {
-  max-width: 110%;
-  max-height: 100%; 
-  height: auto;
-  width: auto; 
+  background-color: #bd2b28ea;
+  padding-bottom: 2rem; 
+  padding: 10px;
 }
 
 .submit{
