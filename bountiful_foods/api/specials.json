@@ -7,31 +7,25 @@
         "regularPrice": 6.99,
         "clientRating": 4.5,
         "numberOfVotes": 120,
-        "imagePath": "images/tropcial.jpg"
+        "imagePath": "images/tropical.jpg"
       },
       {
         "name": "Berry Bliss",
         "description": "A burst of mixed berries that will make your taste buds dance.",
         "specialPrice": 5.49,
         "regularPrice": 7.99,
-        "clientRating": 4.6,
-        "numberOfVotes": 90
-      },
-      {
-        "name": "Citrus Splash",
-        "description": "An invigorating combination of citrus fruits for a refreshing experience.",
-        "specialPrice": 4.79,
-        "regularPrice": 6.49,
         "clientRating": 4,
-        "numberOfVotes": 150
+        "numberOfVotes": 90,
+        "imagePath": "images/berries.jpg"
       },
       {
         "name": "Mango Tango",
         "description": "Savor the sweetness of ripe mangoes in every sip.",
         "specialPrice": 5.99,
         "regularPrice": 8.49,
-        "clientRating": 4.3,
-        "numberOfVotes": 110
+        "clientRating": 4,
+        "numberOfVotes": 110,
+        "imagePath": "images/mango.jpg"
       },
       {
         "name": "Watermelon Wave",
@@ -39,24 +33,17 @@
         "specialPrice": 4.69,
         "regularPrice": 6.99,
         "clientRating": 4.7,
-        "numberOfVotes": 180
+        "numberOfVotes": 180,
+        "imagePath": "images/watermelon.jpg"
       },
       {
-        "name": "Pineapple Passion",
-        "description": "Experience the tropical delight of fresh pineapple goodness.",
-        "specialPrice": 5.29,
-        "regularPrice": 7.49,
-        "clientRating": 4,
-        "numberOfVotes": 130
-      },
-      {
-        "name": "Strawberry Fields",
-        "description": "A field of ripe strawberries blended into a perfect drink.",
-        "specialPrice": 4.89,
-        "regularPrice": 6.99,
-        "clientRating": 4.5,
-        "numberOfVotes": 140
+        "name": "Dragon Berry Delight",
+        "description": "Indulge in the vibrant flavors of dragon fruit and a mix of succulent berries.",
+        "specialPrice": 5.99,
+        "regularPrice": 8.99,
+        "clientRating": 4.8,
+        "numberOfVotes": 150,
+        "imagePath": "images/dragonfruit.jpg"
       }
     ]
   }
-  

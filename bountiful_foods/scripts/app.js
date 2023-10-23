@@ -42,6 +42,7 @@ let time = d.getTime();
 let day = days[d.getDay()];
 let month = months[d.getMonth()];
 let date = d.getDate();
+console.log(day);
 
 const fulldate = `${day}, ${date} ${month} ${year} `;
 
@@ -70,12 +71,23 @@ const drinksDiv = document.querySelector(".drinkContainer");
 async function getData() {
   const response = await fetch(specials);
   const data = await response.json();
-  console.log(data.fruitDrinks[0]);
-  displayDrinkOfTheDay(data.fruitDrinks[0]);
+  
+  if (day === "Monday") {
+    displayDrinkOfTheDay(data.fruitDrinks[0]);
+  } else if (day === "Tuesday") {
+    displayDrinkOfTheDay(data.fruitDrinks[1]);
+  } else if (day === "Wednesday") {
+    displayDrinkOfTheDay(data.fruitDrinks[2]);
+  } else if (day === "Thursday" || day === "Saturday") {
+    displayDrinkOfTheDay(data.fruitDrinks[3]);
+  } else if (day === "Friday" || day == "Sunday") {
+    displayDrinkOfTheDay(data.fruitDrinks[4]);
+  }
 }
+
 getData();
 
-const displayDrinkOfTheDay = (drink) => {
+function displayDrinkOfTheDay(drink) {
 
   // drinks.forEach((drink) => {
 
@@ -123,9 +135,13 @@ const displayDrinkOfTheDay = (drink) => {
     // rating Div for the stars
     const ratingDiv = document.createElement("div");
     ratingDiv.classList.add("rating");
+
+    // num of ratings
     const ratingsNumb = document.createElement("p");
+    ratingsNumb.setAttribute("id", "numb")
     ratingsNumb.innerHTML = `${drink.numberOfVotes} ratings`;
     ratingsNumb.style.fontSize = "smaller";
+    ratingsNumb.style.color = "#d14408";
 
     // function to generate star images based on the rating
     const displayRatingStars = (rating, div) => {
@@ -155,14 +171,15 @@ const displayDrinkOfTheDay = (drink) => {
         div.appendChild(starImage);
       }
     }
-
+    
     displayRatingStars(rating, ratingDiv);
-
 
     // cart icon
     const card = document.createElement("img");
     card.src = "images/cart.png";
     card.alt = "cart icon";
+    card.title = "Add to cart";
+    card.style.cursor = "pointer";
     card.classList.add("cart");
 
     // add els to the content div
@@ -170,6 +187,7 @@ const displayDrinkOfTheDay = (drink) => {
     drinkCont.appendChild(priceDiv);
     drinkCont.appendChild(ratingDiv);
     drinkCont.appendChild(card);
+    drinkCont.appendChild(ratingsNumb);
 
     // add els to the div
     drinksDiv.append(img);
