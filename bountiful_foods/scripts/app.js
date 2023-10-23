@@ -70,7 +70,7 @@ const drinksDiv = document.querySelector(".drinkContainer");
 async function getData() {
   const response = await fetch(specials);
   const data = await response.json();
-  console.log(data.fruitDrinks[5]);
+  console.log(data.fruitDrinks[0]);
   displayDrinkOfTheDay(data.fruitDrinks[0]);
 }
 getData();
@@ -81,7 +81,7 @@ const displayDrinkOfTheDay = (drink) => {
 
   // drinks of the day img
     const img = document.createElement("img");
-    img.src = drink.image;
+    img.src = drink.imagePath;
     img.alt = drink.name;
 
     // drinks content div (description, price, rating, nb of votes)
@@ -97,6 +97,25 @@ const displayDrinkOfTheDay = (drink) => {
     const description = document.createElement("p");
     description.textContent = drink.description;
     description.style.color = "black";
+
+    const priceDiv = document.createElement("div");
+    priceDiv.classList.add("priceDiv");
+    // normal price
+    const price = document.createElement("p");
+    price.innerHTML = `$${drink.regularPrice}`;
+    price.style.color = "#d14408"
+    price.style.fontSize = "smaller";
+    price.style.textDecoration = "line-through";
+
+    // special day price
+    const newPrice = document.createElement("p");
+    newPrice.innerHTML = `$${drink.specialPrice}`;
+    newPrice.style.color = "#289946";
+    newPrice.style.fontSize = "larger";
+
+    // price div
+    priceDiv.appendChild(price);
+    priceDiv.appendChild(newPrice);
 
     // rating stars
     const rating = drink.clientRating;
@@ -139,25 +158,8 @@ const displayDrinkOfTheDay = (drink) => {
 
     displayRatingStars(rating, ratingDiv);
 
-    const priceDiv = document.createElement("div");
-    priceDiv.classList.add("priceDiv");
-    // normal price
-    const price = document.createElement("p");
-    price.innerHTML = `$${drink.regularPrice}`;
-    price.style.color = "#d14408"
-    price.style.fontSize = "smaller";
-    price.style.textDecoration = "line-through";
 
-    // special day price
-    const newPrice = document.createElement("p");
-    newPrice.innerHTML = `$${drink.specialPrice}`;
-    newPrice.style.color = "#289946";
-    newPrice.style.fontSize = "larger";
-
-    // price div
-    priceDiv.appendChild(price);
-    priceDiv.appendChild(newPrice);
-
+    // cart icon
     const card = document.createElement("img");
     card.src = "images/cart.png";
     card.alt = "cart icon";
@@ -165,8 +167,8 @@ const displayDrinkOfTheDay = (drink) => {
 
     // add els to the content div
     drinkCont.append(description);
-    drinkCont.appendChild(ratingDiv);
     drinkCont.appendChild(priceDiv);
+    drinkCont.appendChild(ratingDiv);
     drinkCont.appendChild(card);
 
     // add els to the div

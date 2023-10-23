@@ -7,7 +7,7 @@
         "regularPrice": 6.99,
         "clientRating": 4.5,
         "numberOfVotes": 120,
-        "image": "images/tropical.jpg"
+        "imagePath": "images/tropcial.jpg"
       },
       {
         "name": "Berry Bliss",

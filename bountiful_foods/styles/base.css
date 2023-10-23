@@ -66,27 +66,29 @@ footer{
 .drinkText {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 1rem;
+  gap: .5rem;
   /* align-items: end; */
 }
 
-.rating {
+.rating,
+.cart {
   display: flex; 
-  align-items: center; 
-  justify-content: flex-end; 
+  align-items: center;  
 }
+
 
 .rating img,
 .cart {
   width: 24px;
 }
-.cart {
-  margin: 20px auto;
 
-}
+.cart {
+  margin-left: auto;
+} 
 
 .priceDiv {
   display: flex;
+  justify-content: end;
 }
 .priceDiv p {
   padding: 0;
@@ -303,8 +305,7 @@ a {
 }
 
 .promo p,
-.drinkText,
-.drinkContainer h3 {
+.drinkText {
   text-align: left;
 }
 
