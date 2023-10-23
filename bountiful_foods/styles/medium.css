@@ -36,6 +36,7 @@
     .hero,
     .home-hero,
     .aboutHero,
+    .addInfo,
     footer{
         grid-column: 1/4;
     }

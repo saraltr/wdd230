@@ -34,7 +34,7 @@
     header,
     footer,
     .hero,
-    .aboutHero{
+    .aboutHero {
         grid-column: 1/4;
     }
     
