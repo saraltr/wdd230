@@ -49,7 +49,6 @@ main{
     background-color: var(--secondary-color);
 }
 
-.specials,
 .button,
 nav,
 .drinks,
@@ -60,7 +59,16 @@ footer{
 .getContact,
 .specials {
   text-align: center;
-  padding-bottom: .5rem;
+  /* padding-bottom: .5rem; */
+}
+
+/* .specials-content {
+  background-color: var(--primary-color);
+} */
+
+.specials {
+  background-color: var(--primary-color);
+  position: relative;
 }
 
 .drinkText {
@@ -73,6 +81,12 @@ footer{
   padding: 0;
   margin: 0;
 }
+.cart2 {
+  padding: 1rem;
+  width: 24px;
+  height: 24px;
+  margin-bottom: auto;
+}
 
 .rating,
 .cart {
@@ -80,6 +94,41 @@ footer{
   align-items: center;  
 }
 
+.bottomdiv,
+.bestSelling {
+  display: flex;
+}
+.bestSelling {
+  overflow-x: scroll;
+  overflow-y: hidden;
+  scroll-behavior: smooth;
+}
+
+/* Webkit-based browsers (Chrome, Safari) */
+.bestSelling::-webkit-scrollbar {
+  width: 8px; 
+}
+
+.bestSelling::-webkit-scrollbar-thumb {
+  background-color: var(--secondary-color);
+  border-radius: 10px;
+}
+
+.bestSelling::-webkit-scrollbar-track {
+  /* background-color: var(--track);  */
+  background-color: var();
+}
+
+
+.montlyDrink {
+  width: 90%;
+  margin: 1rem;
+  padding: .5rem .5rem 0 .5rem;
+  background-color: var(--secondary-color);
+}
+.montlyDrink img {
+  width: 250px;
+}
 
 .rating img,
 .cart {
@@ -95,7 +144,8 @@ footer{
   justify-content: end;
 }
 .priceDiv p {
-  padding: 0;
+  padding: 0 0 .5rem 0;
+  margin: 0;
 }
 .moreInfo{
   display: none;
@@ -188,8 +238,10 @@ nav ul li a:hover {
   display: flex;
   gap: 1.2rem;
 }
+
 section{
   margin: 1.5rem 0;
+  padding-bottom: 1.5rem;
 }
 .index h1{
   text-shadow: 4px 4px 5px var(--accent2);
@@ -323,7 +375,8 @@ section img {
   width: 100%;
 }
 
-.drinkContainer { 
+.drinkContainer
+ { 
   background-color: var(--secondary-color);
   padding: 1rem;
   width: 70%;
@@ -394,11 +447,27 @@ section img {
     background-color: var(--accent2);
     padding-bottom: 2rem;
 }
-.container{
+.container {
   padding-top: .5rem;
 }
 
-.cardInfo{
+.montly {
+  background-color: #d14408e7;
+  position: relative;
+  background-image: url(../images/drinks-kobby.jpg);
+  background-size: cover;
+
+}
+
+.montly #sideImg {
+  position: absolute;
+  width: 30%;
+  right: 1rem;
+  top: -10px;
+  /* top: 1rem; */
+}
+
+.cardInfo {
     display: flex;
     flex-direction: column-reverse;
     gap: 1rem;

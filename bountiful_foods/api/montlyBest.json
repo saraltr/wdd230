@@ -1,0 +1,34 @@
+{
+  "montlyBest": 
+  [
+    {
+      "name": "Berry Apple Bliss",
+      "description": "A delicious and refreshing mix of strawberries, berries, and crisp apples",
+      "specialPrice": 5.49,
+      "regularPrice": 7.99,
+      "imagePath": "images/rouges.jpg"
+    },
+    {
+      "name": "Mango Citrus Zest",
+      "description": "Savor the tropical sweetness of ripe mangoes blended with zesty citrus fruits.",
+      "specialPrice": 4.99,
+      "regularPrice": 6.99,
+      "imagePath": "images/citrusmango.jpg"
+    },
+    {
+      "name": "Dragon Berry Delight",
+      "description": "Indulge in the vibrant flavors of dragon fruit and a mix of succulent berries.",
+      "specialPrice": 5.99,
+      "regularPrice": 8.99,
+      "imagePath": "images/dragonfruit2.jpg"
+    },
+    {
+      "name": "Tropical Fresh",
+      "description": "Savor the exotic fusion of ripe papaya, watermelon, and lemon.",
+      "specialPrice": 6.29,
+      "regularPrice": 8.99,
+      "imagePath": "images/fresh.jpg"
+    } 
+
+  ]
+}

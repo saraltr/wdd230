@@ -126,8 +126,8 @@ function displayDrinkOfTheDay(drink) {
     newPrice.style.fontSize = "larger";
 
     // price div
-    priceDiv.appendChild(price);
     priceDiv.appendChild(newPrice);
+    priceDiv.appendChild(price);
 
     // rating stars
     const rating = drink.clientRating;

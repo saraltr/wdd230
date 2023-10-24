@@ -16,6 +16,7 @@ const getFruits = async()=>{
     }
     
 }
+
 getFruits();
 
 function displayResults(data) {

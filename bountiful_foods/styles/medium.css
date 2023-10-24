@@ -33,6 +33,24 @@
     }
 
     header,
+    footer,
+    .home-hero,
+    .addInfo,
+    .promo,
+    .specials,
+    .montly,
+    .info,
+    .cardInfo,
+    .container,
+    .getContact {
+        grid-column: 1/4;
+    }
+
+    /* .addInfo {
+        display: none;
+    } */
+
+    /* header,
     .hero,
     .home-hero,
     .aboutHero,
@@ -79,5 +97,5 @@
 
     .drinks{
         background-position:center;
-    }
+    } */
 }
