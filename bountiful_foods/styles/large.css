@@ -37,6 +37,10 @@
     .aboutHero {
         grid-column: 1/4;
     }
+
+    .addInfo {
+        grid-row: 3/4;
+    }
     
     .button{
         justify-content: center;
@@ -44,23 +48,25 @@
 
     .promo{
         grid-column: 1/3;
+        grid-row: 4/5;
     }
+
+    figcaption p {
+        display: flex;
+        justify-content: center;
+    }
+
     .info{
         grid-column: 1/2;
         margin-right: 20px;
     }
     .getContact{
-        grid-column: 2/4;
         padding-bottom: 1rem;
     }
     .cardInfo{
         grid-column: 3/4;
-        grid-row: 3/4;
-    }
-    .container, .info{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
+        grid-row: 4/5;
+        margin-bottom: 0;
     }
     .action-button{
         padding: 1rem;
@@ -70,6 +76,49 @@
     }
     .container{
         grid-column: 2/4;
-        grid-row: 4/5;
+        margin: 0;
     }
+
+    .montly {
+        text-align: center;
+    }
+
+    .montlyDrink img { 
+        margin-top: 1rem;
+    }
+
+    .drinkContainer {
+        width: 40%;
+    }
+    
+    .promo h2 {
+        margin-bottom: 2rem;
+    }
+
+    .promoContent {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
+        align-items: center;
+    }
+
+    .promoText p {
+        font-size: 1.1rem;
+        line-height: 1.5;
+    }
+
+    .promo img {
+        width: 80%;
+    }
+
+
+    button.action-button {
+        margin-top: 2rem;
+        padding: 1rem 1.5rem;
+        font-size: 1.2rem;
+    }
+
+    .drinks-display {
+        grid-template-columns: repeat(5, 1fr);
+    }
+   
 }

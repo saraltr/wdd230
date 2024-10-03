@@ -52,6 +52,7 @@
                     <ul id="primaryNav">
                         <li class="active"><a href="index.html">Home</a></li>
                         <li><a href="fresh.html">Fresh</a></li>
+                        <li><a href="catalog.html">Catalog</a></li>
                         <li><a href="about.html">About Us</a></li>
                     </ul>
                 </nav>
@@ -78,7 +79,8 @@
                 </picture>
                 <div class="promoText">
                     <p><strong>At Bountiful Fruits, we believe in giving you the power to create the perfect drink that suits your taste.</strong></p>
-                    <p>With our innovative drink builder, you can select from a wide variety of fresh fruits, add special instructions to craft a drink that perfectly matches your tastes. Try it today and discover your new favorite drink!</p>
+                    <p>With our drink builder, you can select from a wide range of the freshest, seasonal fruits to create your own signature drink! We've got the ingredients to bring your ideas to life!</p>
+                    <p>Choose your favorite fruits, add optional ingredients, and include instructions to tailor the drink to your liking. The result is a completely personalized drink that reflects your unique taste preferences. More than a drink, it's an experience crafted just for you!</p>
                 </div>    
             </div>
             <button class="action-button" href="fresh.html">Create Your own Drink</button>
@@ -86,7 +88,7 @@
 
         <section class="specials">
             <div class="specials-content">
-              <h2>Today's Specials</h2>
+              <h2 id="today"></h2>
               <p>Discover our daily specials featuring the freshest and most delicious drinks you can find! Our talented mixologists create unique concoctions each day that you won't want to miss.</p>
             </div> 
             <div class="drinkContainer">
@@ -98,7 +100,6 @@
             <div class="bestSelling">
             </div>
             <picture id="sideImg">
-                <!-- <img src="images/rodion-kutsaiev-x4z7GiV5_-0-unsplash.jpg" alt="fruit coktail" loading="lazy"> -->
             </picture>
         </section>
 
@@ -130,7 +131,8 @@
                     <h4 id="desc"></h4>
                     <div class="currentInfo">
                        <p>Humidity: <span id="humidity"></span></p>
-                        <p>Max Temp: <span id="max"></span></p> <p>Min Temp: <span id="min"></span>
+                        <p>Max Temp:
+                            <span id="max"></span></p> <p>Min Temp: <span id="min"></span>
                         </p>
                     </div>
                 </section>
@@ -172,8 +174,11 @@
         <section class="getContact">
             <h2>Any Question?</h2>
             <p>Are you curious about our company? Want to get in touch?</p>
-            <button class="specials-button" href="about.html">Learn more about us</button>
-
+            <button class="specials-button">
+                <a href="about.html">
+                    Learn more about us
+                </a>
+            </button>
             <div class="moreInfo">
                 <p>We'd love to hear from you! If you have any questions, comments or feedback, please feel free to reach out to us via phone, email or the contact form below.</p>
                 <p>📞 Phone: 555-1234-5678</p>

@@ -168,11 +168,22 @@ button,
 {
   border: none;
   outline: none;
+  cursor: pointer;
 }
 .mainNav button {
   margin: 0.2rem 2vw;
   background-color: transparent;
   font-size: 2rem;
+}
+
+.specials-button {
+  cursor: pointer;
+  padding: .5rem;
+  border-radius: .5rem;
+}
+
+.specials-button a {
+  color: #437081;
 }
 
 .logo{
@@ -252,10 +263,14 @@ section{
   font-size: 3em;
 }
 .hero{
-    background-color: var(--primary-color);
-    display: grid;
-    grid-template-columns: repeat(2,1fr);
-    gap: 20px;
+  margin: 0;
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  gap: 20px;
+  background-image: url("../images/fresh-fruits.jpg");
+  background-size: cover;
+  background-position: center;
+  background-color: #c8221f;
 }
 
 .home-hero {
@@ -284,19 +299,6 @@ section{
   text-align: center;
   position: relative;
   z-index: 2;
-}
-
-.addInfo::before {
-  content: "";
-  position: absolute;
-  bottom: -20%;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 100px; 
-  height: 50px; 
-  background-color: var(--primary-color);
-  border-radius: 50%;
-  z-index: 1;
 }
 
 .hero-placeholder {
@@ -331,6 +333,16 @@ section{
   max-width: 30rem;
   width: 100%;
 }
+
+.firstcolumn h1 {
+  text-align: center;
+}
+
+.firstcolumn {
+  max-width: 600px;
+  margin: auto;
+}
+
 .secondcolumn{
   display: flex;
   flex-direction: column;
@@ -363,6 +375,7 @@ a {
 
 .promo p, .promoText p {
   color: var(--accent2);
+
 }
 
 .promo p,
@@ -655,6 +668,10 @@ textarea{
   width: 100%;
 }
 
+.form h2 {
+  color: #c8221f;
+}
+
 .userInfo{
   display: flex;
   flex-direction: column;
@@ -716,4 +733,52 @@ iframe,
   width: 90%;
   display: block;
   margin: auto;
+}
+
+.about section img {
+  width: 50%;
+}
+/* catalog */
+
+.drinks-display {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  position: relative;
+}
+
+.drink-container {
+  position: relative;
+}
+
+.drink-container img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #d14408a1;
+}
+
+.drink-container:hover .overlay {
+  opacity: 1;
+}
+
+.catText {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
 }

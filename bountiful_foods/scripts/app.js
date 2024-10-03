@@ -42,7 +42,7 @@ let time = d.getTime();
 let day = days[d.getDay()];
 let month = months[d.getMonth()];
 let date = d.getDate();
-console.log(day);
+// console.log(day);
 
 const fulldate = `${day}, ${date} ${month} ${year} `;
 
@@ -67,6 +67,8 @@ img.onload = function () {
 const specials = "api/specials.json";
 const drinksDiv = document.querySelector(".drinkContainer");
 
+const todays = document.querySelector("#today");
+todays.textContent = `${day}'s Special`;
 
 async function getData() {
   const response = await fetch(specials);

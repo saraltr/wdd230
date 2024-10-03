@@ -1,0 +1,86 @@
+{
+  "drinks": [
+    {
+      "name": "Tropical Paradise",
+      "description": "A delightful blend of exotic fruits for a taste of paradise.",
+      "specialPrice": 4.99,
+      "regularPrice": 6.99,
+      "clientRating": 4.5,
+      "numberOfVotes": 120,
+      "imagePath": "images/tropical.jpg"
+    },
+    {
+      "name": "Berry Bliss",
+      "description": "A burst of mixed berries that will make your taste buds dance.",
+      "specialPrice": 5.49,
+      "regularPrice": 7.99,
+      "clientRating": 4,
+      "numberOfVotes": 90,
+      "imagePath": "images/berries.jpg"
+    },
+    {
+      "name": "Mango Tango",
+      "description": "Savor the sweetness of ripe mangoes in every sip.",
+      "specialPrice": 5.99,
+      "regularPrice": 8.49,
+      "clientRating": 4,
+      "numberOfVotes": 110,
+      "imagePath": "images/mango.jpg"
+    },
+    {
+      "name": "Watermelon Wave",
+      "description": "A wave of juicy watermelon flavor to quench your thirst.",
+      "specialPrice": 4.69,
+      "regularPrice": 6.99,
+      "clientRating": 4.7,
+      "numberOfVotes": 180,
+      "imagePath": "images/watermelon.jpg"
+    },
+    {
+      "name": "Dragon Berry Delight",
+      "description": "Indulge in the vibrant flavors of dragon fruit and a mix of succulent berries.",
+      "specialPrice": 5.99,
+      "regularPrice": 8.99,
+      "imagePath": "images/dragonfruit2.jpg"
+    },
+    {
+      "name": "Berry Apple Bliss",
+      "description": "A delicious and refreshing mix of strawberries, berries, and crisp apples.",
+      "specialPrice": 5.49,
+      "regularPrice": 7.99,
+      "imagePath": "images/rouges.jpg"
+    },
+    {
+      "name": "Mango Citrus Zest",
+      "description": "Savor the tropical sweetness of ripe mangoes blended with zesty citrus fruits.",
+      "specialPrice": 4.99,
+      "regularPrice": 6.99,
+      "imagePath": "images/citrusmango.jpg"
+    },
+    {
+      "name": "Tropical Fresh",
+      "description": "Savor the exotic fusion of ripe papaya, watermelon, and lemon.",
+      "specialPrice": 6.29,
+      "regularPrice": 8.99,
+      "imagePath": "images/fresh.jpg"
+    },
+    {
+      "name": "Passion Orange Mint Cooler",
+      "description": "A refreshing blend of tangy passion fruit, sweet oranges, and a hint of fresh mint for a revitalizing experience.",
+      "specialPrice": 5.29,
+      "regularPrice": 7.49,
+      "clientRating": 4.6,
+      "numberOfVotes": 95,
+      "imagePath": "images/passion_orange_mint.jpg"
+    },
+    {
+      "name": "Kiwi Mint Fusion Smoothie",
+      "description": "A revitalizing smoothie featuring the zesty flavor of kiwi blended with the refreshing coolness of mint for a perfect balance of sweet and tangy.",
+      "specialPrice": 5.99,
+      "regularPrice": 8.29,
+      "clientRating": 4.7,
+      "numberOfVotes": 110,
+      "imagePath": "images/kiwi_mint_smoothie.jpg"
+    }
+  ]
+}
