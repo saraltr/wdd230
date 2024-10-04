@@ -56,9 +56,14 @@
         justify-content: center;
     }
 
-    .info{
+    .info,
+    .form{
         grid-column: 1/2;
         margin-right: 20px;
+    }
+
+    .userInfo {
+        grid-column: 2/3;
     }
     .getContact{
         padding-bottom: 1rem;

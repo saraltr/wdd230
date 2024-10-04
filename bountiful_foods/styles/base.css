@@ -170,6 +170,7 @@ button,
   outline: none;
   cursor: pointer;
 }
+
 .mainNav button {
   margin: 0.2rem 2vw;
   background-color: transparent;
@@ -432,16 +433,22 @@ section img {
   background-color: var(--accent1);
   color: var(--secondary-color);
   padding: .5rem;
-  border-radius: 10px;
-  width: 80%;
+  border-radius: 5px;
+  width: auto;
   margin: 0.5rem auto;
   display: block;
+  border: none;
+  outline: none;
 }
 
-.submit:hover{
+.submit:hover {
   background-color: var(--primary-color);
-  transform: scale(1.1);
-  border: none;
+}
+
+.submit:focus {
+  background-color: #c8221f;
+  border-color: #c8221fc6;
+  box-shadow: rgba(255, 255, 255, 0.15) 0 1px 0 inset, rgba(46, 54, 80, 0.075) 0 1px 1px, #c8221fa0 0 0 0 .2rem;
 }
 
 .card img{
@@ -650,9 +657,14 @@ footer{
 input:required{
   border: 2px solid var(--primary-color);
 }
-input:valid{
-  border:  2px solid var(--accent1);
+input[type="text"]:valid,
+input[type="email"]:valid,
+input[type="tel"]:valid,
+input[type="password"]:valid {
+  border: 2px solid var(--accent1);
 }
+
+
 .info ul{
   list-style: none;
   padding: 0;
@@ -677,7 +689,7 @@ textarea{
   display: flex;
   flex-direction: column;
   background-image: url("../images/back.png");
-  background-size:auto;
+  background-size: 200%;
   background-repeat: no-repeat;
   background-position: top;
 }

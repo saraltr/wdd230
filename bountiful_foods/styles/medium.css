@@ -49,7 +49,10 @@
     .info,
     .cardInfo,
     .container,
-    .getContact {
+    .getContact,
+    .hero,
+    .userInfo,
+    .form {
         grid-column: 1/4;
     }
 
