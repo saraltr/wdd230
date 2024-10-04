@@ -26,6 +26,7 @@ h4{
     color: var(--secondary-color);
     margin: 0;
     padding: .7rem;
+    font-size: 2rem;
 }
 
 p, 
@@ -502,12 +503,12 @@ section img {
     padding-bottom: .5rem;
 }
 
-.container,
-.history
+.container
 {
     background-color: var(--accent2);
     padding-bottom: 2rem;
 }
+
 .container {
   padding-top: .5rem;
 }
@@ -824,4 +825,149 @@ iframe,
   left: 50%;
   transform: translate(-50%, -50%);
   text-align: center;
+}
+
+* {
+  box-sizing: border-box
+}
+
+.about {
+  background-color: #f9f9f9;
+}
+
+.history,
+.contact {
+  margin: 0 1rem;
+}
+
+.contact h2 {
+  text-align: center;
+  margin: 1rem 0;
+}
+
+.contact {
+  margin: 0;
+}
+
+.history h2 {
+  color: var(--accent1);
+  margin: 1rem 0;
+  text-align: center;
+}
+
+.history p,
+.contact p {
+  line-height: 1.6;
+  margin-bottom: 2rem;
+  max-width: 600px;
+  margin:  1rem auto;
+}
+
+.history p {
+  color: #333;
+}
+
+.slideshow-container {
+  position: relative;
+  max-width: 100%;
+  margin: auto;
+  overflow: hidden;
+}
+
+.mySlides {
+  display: none;
+  position: relative;
+  
+}
+
+.slide-image {
+  width: 100%;
+  border-radius: 8px;
+}
+
+.numbertext {
+  color: #fff;
+  font-size: 1.5rem;
+  position: absolute;
+  top: 16px;
+  left: 16px;
+  z-index: 10;
+}
+
+.prev,
+.next {
+  cursor: pointer;
+  background-color: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: background-color 0.3s;
+  border-radius: 5px;
+}
+
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.648);
+}
+
+.prev {
+  left: 0;
+}
+
+.next {
+  right: 0;
+}
+
+.dots-container {
+  text-align: center;
+  margin-top: 1rem;
+}
+
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 4px;
+  background-color: #bbb;
+  /* Gray background for dots */
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.dot:hover {
+  background-color: var(--accent1);
+  /* Highlight on hover */
+}
+
+.dot.active {
+  background-color: var(--primary-color);
+  /* Highlight active dot */
+}
+
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+@keyframes fade {
+  from {
+    opacity: .4
+  }
+
+  to {
+    opacity: 1
+  }
 }

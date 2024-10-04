@@ -62,14 +62,47 @@
                     <p>Discover the rich history and culture of our company and the surrounding area.</p>  
                 </div>
             </section>
+
             <section class="history">
                 <h2>Our History</h2>
                 <p>Bountiful Foods was founded in 1980 in the heart of Carlsbad. Bountiful Foods was created by a group of farmers and entrepreneurs that saw an opportunity to create something special: a cooperative that would unite small-scale growers and producers under a common mission of sustainable, community-based food production.
                 Since then, we have been providing high-quality products and services to the community. We are proud to have served generations of families over the years and are committed to continuing that tradition.</p>
-                <img src="images/daniel-angele-QaiLqlqHiHs-unsplash.jpg" alt="woman working on a food stand" loading="lazy">
-                <p>Over the years, Bountiful Foods has grown and expanded, building relationships with farmers and suppliers across the region and establishing a reputation as a leader in the sustainable food movement. Today, the company operates multiple retail locations and a thriving wholesale business, supplying restaurants and markets throughout the area with fresh, seasonal products.</p>
-                <img src="images/vince-fleming-78U2m_4XbKM-unsplash.jpg" alt="Carlsbad, CA, USA" loading="lazy">
+
+                <div class="slideshow-container">
+                
+                    <div class="mySlides fade">
+                        <div class="numbertext">1 / 4</div>
+                        <img src="images/about1.jpg" style="width:70%">
+                    </div>
+                
+                    <div class="mySlides fade">
+                        <div class="numbertext">2 / 4</div>
+                        <img src="images/daniel-angele-QaiLqlqHiHs-unsplash.jpg" style="width:70%">
+                    </div>
+                    <div class="mySlides fade">
+                        <div class="numbertext">3 / 4</div>
+                        <img src="images/vince-fleming-78U2m_4XbKM-unsplash.jpg" style="width:70%">
+                    </div>
+                
+                    <div class="mySlides fade">
+                        <div class="numbertext">4 / 4</div>
+                        <img src="images/about4.jpg" style="width:70%">
+                    </div>
+                
+                    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                </div>
+                <br>
+                
+                <div style="text-align:center">
+                    <span class="dot" onclick="currentSlide(1)"></span>
+                    <span class="dot" onclick="currentSlide(2)"></span>
+                    <span class="dot" onclick="currentSlide(3)"></span>
+                    <span class="dot" onclick="currentSlide(4)"></span>
+                </div>
+
             </section>
+
             <section class="contact">
                 <h2>Contact Us</h2>
                 <p>We'd love to hear from you! If you have any questions, comments or feedback, please feel free to reach out to us via phone, email or the contact form below.</p>
@@ -103,5 +136,6 @@
 
         </main>
         <script src="scripts/app.js"></script>
+        <script src="scripts/slide.js"></script>
     </body>
 </html>
