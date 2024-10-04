@@ -263,16 +263,6 @@ section{
   text-shadow: 4px 4px 5px var(--accent2);
   font-size: 3em;
 }
-.hero{
-  margin: 0;
-  display: grid;
-  grid-template-columns: repeat(2,1fr);
-  gap: 20px;
-  background-image: url("../images/fresh-fruits.jpg");
-  background-size: cover;
-  background-position: center;
-  background-color: #c8221f;
-}
 
 .home-hero {
   background-color: var(--primary-color);
@@ -318,15 +308,29 @@ section{
   background-image: none; /* Remove the background image when the actual image is loaded */
 }
 
-.aboutHero{
+.aboutHero,
+.catHero,
+.hero {
   background-color: var(--primary-color);
   padding-bottom: 1rem;
   text-align: center;
-  background-image: url(../images/hero-3.png);
-  background-size:50%;
+  background-size: cover;
   background-repeat: no-repeat;
   background-position: right;
   min-height: 8rem;
+  margin: 0;
+}
+
+.aboutHero {
+    background-image: url(../images/hero-3.png);
+}
+
+.catHero {
+    background-image: url(../images/fresh-hero.png);
+}
+
+.hero {
+  background-image: url(../images/fresh-fruits.jpg);
 }
 
 .hero img{
@@ -344,14 +348,6 @@ section{
   margin: auto;
 }
 
-.secondcolumn{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  gap: 2rem;
-  margin-bottom: 1rem;
-}
 a {
   text-decoration: none;
 }
