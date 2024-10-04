@@ -658,6 +658,7 @@ input:valid{
   padding: 0;
 }
 
+
 form input,
 input[type="checkbox"]
 {
@@ -690,18 +691,52 @@ textarea{
   align-items: center;
 }
 
-#submit-message{
-  display: none;
-  background-color: #ff824dbf;
-  color: var(--secondary-color);
-  padding: .5rem;
-  border-radius: 5px;
-  width: 80%;
-  margin: auto;
-  margin-top: 1rem;
-  text-align: center;
+#close {
+  cursor: pointer;
+  margin: 0;
+  font-size: larger;
+  font-weight: bold;
 }
 
+#close:hover {
+  color: #c8221f;
+}
+
+#submit-message {
+  display: none;
+  background-color: #ffffffd7;
+  padding: 1rem;
+  border-radius: 10px;
+  width: 55%;
+  margin: auto;
+  margin-top: 2rem;
+  text-align: left;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.orderTop {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 2px solid #c8221f;
+  padding-bottom: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+#submit-message h2 {
+  color: #c8221f;
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+#submit-message p {
+  color: #333;
+  line-height: 1.5;
+  margin: 0.5rem 0;
+}
+
+#submit-message strong {
+  color: #437081;
+}
 
 .fruitsInfo{
   background-color: var(--accent1);

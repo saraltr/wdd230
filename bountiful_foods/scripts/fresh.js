@@ -5,7 +5,7 @@ const getFruits = async()=>{
         const response = await fetch(url);
         if (response.ok) {
             const data = await response.json();
-            console.log(data)
+            // console.log(data)
             displayResults(data);
           } else {
               throw Error(await res.text());
@@ -52,9 +52,19 @@ function selectedFruits() {
       checkboxes[i].disabled = false;
     }
   }
+
+  const title = document.querySelector("#creationTitle");
   
   const selectedFruits = document.getElementById('selected-fruits');
-  selectedFruits.innerHTML = ''; 
+  selectedFruits.innerHTML = '<h3>Selected Fruits:</h3>';
+  if (checkedCheckboxes.length > 0) {
+    title.innerHTML = 'Your Selection:'
+  }
+
+  if (checkedCheckboxes.length === 0) {
+      selectedFruits.innerHTML = '';
+      title.innerHTML = 'Create Your Drink!'
+  } 
 
   let totalCarbohydrates = 0;
   let totalProtein = 0;
@@ -64,6 +74,13 @@ function selectedFruits() {
 
   const selectedFruitsList = document.createElement('p');
   selectedFruits.appendChild(selectedFruitsList);
+
+  if (checkedCheckboxes.length === 0) {
+      // clear nutrition summary if no fruits are selected
+      const nutritionSummary = document.getElementById('nutrition-summary');
+      nutritionSummary.innerHTML = "You haven't chosen any fruits.";
+      return;
+  }
 
   for (let i = 0; i < checkedCheckboxes.length; i++) {
     const fruitName = checkedCheckboxes[i].value;
@@ -81,18 +98,21 @@ function selectedFruits() {
 
   const nutritionSummary = document.getElementById('nutrition-summary');
   nutritionSummary.innerHTML = `
-    Total carbohydrates: ${totalCarbohydrates.toFixed(1)}g<br>
-    Total protein: ${totalProtein.toFixed(1)}g<br>
-    Total fat: ${totalFat.toFixed(1)}g<br>
-    Total calories: ${totalCalories.toFixed(1)} kcal<br>
-    Total sugar: ${totalSugar.toFixed(1)}g
+    <h2>Nutrition Summary:</h2>
+    Total carbohydrates: ${totalCarbohydrates.toFixed(2)}g<br>
+    Total protein: ${totalProtein.toFixed(2)}g<br>
+    Total fat: ${totalFat.toFixed(2)}g<br>
+    Total calories: ${totalCalories.toFixed(1)}kcal<br>
+    Total sugar: ${totalSugar.toFixed(2)}g
   `;
   
     const form = document.getElementById('drink-form');
     const messageDiv = document.getElementById('submit-message');
     const orderCount = document.getElementById('order-count');
     let numDrinksOrdered = parseInt(localStorage.getItem("numDrinksOrdered")) || 0;
+
     form.addEventListener('submit', function(event) {
+
         event.preventDefault();
 
         numDrinksOrdered++;
@@ -104,9 +124,53 @@ function selectedFruits() {
         const phone = document.getElementById('phone').value;
         const fruits = document.querySelectorAll('#fruits input[type="checkbox"]:checked');
         const instructions = document.querySelector('textarea[name="userText"]').value;
+        selectedFruits.textContent = '';
+        const nutritionSummary = document.getElementById('nutrition-summary');
+        nutritionSummary.innerHTML = '';
+
+        function validateEmail(email) {
+            const emailPattern = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+            return emailPattern.test(email);
+        }
+
+        let errorMessages = [];
+
+        if (!firstName) {
+            errorMessages.push("No name provided.");
+        }
+        if (!email) {
+            errorMessages.push("No email provided.");
+        }
+        if (!validateEmail(email)) {
+          errorMessages.push("The email provided is not valid.");
+        }
+        if (!phone) {
+            errorMessages.push("No phone number provided.");
+        }
+        if (fruits.length === 0) {
+            errorMessages.push("No fruits selected.");
+        }
+
+        if (errorMessages.length > 0) {
+          const errorForm = document.createElement("h3")
+          errorForm.textContent = "Form Incomplete";
+          errorForm.style.color = "#c8221f";
+          const errorMsg = document.createElement("p");
+          errorMsg.style.color = "#c8221f";
+          errorMsg.innerHTML = errorMessages.join("<br>");
+          messageDiv.appendChild(errorForm);
+          messageDiv.appendChild(errorMsg);
+          messageDiv.style.display = 'block';
+          // console.log(errorMessages.length);
+          return;
+        }
 
         const orderInfo = `
-            <p>Your drink has been ordered. You will receive an email confirmation shortly.</p>
+            <div class="orderTop">
+              <h2>Order #${numDrinksOrdered} Information</h2>
+              <p id="close">x</p>
+            </div>
+            <p class="orderConfir">Your drink has been ordered! You will receive an email confirmation shortly.</p>
             <p><strong>First Name:</strong> ${firstName}</p>
             <p><strong>Email:</strong> ${email}</p>
             <p><strong>Phone Number:</strong> ${phone}</p>
@@ -114,9 +178,14 @@ function selectedFruits() {
             <p><strong>Special Instructions:</strong> ${instructions}</p>
             <p><strong>Order Date:</strong> ${new Date().toLocaleDateString()}</p>`;
 
+        messageDiv.addEventListener("click", function(event) {
+          if (event.target.id === "close") {
+            messageDiv.style.display = "none";
+          } 
+        })
+
         messageDiv.style.display = 'block';
         messageDiv.innerHTML = `
-            <h2>Order Information</h2>
             ${orderInfo}`;
     
         orderCount.innerHTML = `<p>You have ordered ${numDrinksOrdered} drinks.</p>`;
@@ -124,7 +193,6 @@ function selectedFruits() {
             localStorage.setItem("numDrinksOrdered", 0);
             
             numDrinksOrdered = 0;
-
         });
     });
   

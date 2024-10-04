@@ -68,17 +68,17 @@
         </section>
 
         <section class="form">
-            <h2>Order</h2>
+            <h2>Drink Builder</h2>
             <form id="drink-form">
                 <fieldset class="userInfo">
                     <legend>Personal Information:</legend>
-                    <label for="first-name">First Name:</label>
+                    <label for="first-name">First Name *:</label>
                     <input type="text" id="first-name" name="first-name" required><br>
 
-                    <label for="email">Email:</label>
+                    <label for="email">Email *:</label>
                     <input type="email" id="email" name="email" required><br>
 
-                    <label for="phone">Phone Number:</label>
+                    <label for="phone">Phone Number *:</label>
                     <input type="tel" id="phone" name="phone" required><br>
                 </fieldset>
 
@@ -87,20 +87,19 @@
                 </fieldset>
                 <fieldset>
                     <legend>Special Instructions</legend>
-                    <textarea name="userText" autocapitalize="sentences" minlength="10" cols="30" rows="10" spellcheck="false"></textarea>
+                    <textarea name="userText" autocapitalize="sentences" minlength="10" cols="30" rows="10"></textarea>
                 </fieldset>
                 <input class="submit" type="submit" value="Submit your creation!">
             </form>
         </section>
 
         <section class="fruitsInfo userInfo">
-            <div id="submit-message">
-            </div>
-            <h2>Your Selection</h2>
-            <h3>Selected Fruits:</h3>
+            <h2 id="creationTitle">Create Your Drink!</h2>
             <ol id="selected-fruits"> 
             </ol>
-            <p id="nutrition-summary"></p> 
+            <p id="nutrition-summary"></p>
+            <div id="submit-message">
+            </div>
         </section>
         <footer>
             <div class="fotterUp">

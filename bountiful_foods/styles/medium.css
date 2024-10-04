@@ -25,6 +25,10 @@
         grid-template-columns: repeat(2,1fr);
     }
 
+    .drinkContainer {
+        width: 50%;
+    }
+
     main.index
     {
         display: grid;

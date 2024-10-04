@@ -50,12 +50,12 @@ const displayMontlyDrinks = ((drinks) => {
         priceDiv.appendChild(price);
 
         // cart icon
-        const card = document.createElement("img");
-        card.src = "images/cart.png";
-        card.alt = "cart icon";
-        card.title = "Add to cart";
-        card.style.cursor = "pointer";
-        card.classList.add("cart2");
+        // const card = document.createElement("img");
+        // card.src = "images/cart.png";
+        // card.alt = "cart icon";
+        // card.title = "Add to cart";
+        // card.style.cursor = "pointer";
+        // card.classList.add("cart2");
 
         const montlyDrink = document.createElement("div");
         montlyDrink.classList.add("montlyDrink");

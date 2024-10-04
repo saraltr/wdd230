@@ -85,6 +85,8 @@
 
     .montlyDrink img { 
         margin-top: 1rem;
+        width: 350px;
+
     }
 
     .drinkContainer {

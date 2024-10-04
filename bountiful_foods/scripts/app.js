@@ -97,6 +97,7 @@ function displayDrinkOfTheDay(drink) {
     const img = document.createElement("img");
     img.src = drink.imagePath;
     img.alt = drink.name;
+    img.classList.add("dayDrink")
 
     // drinks content div (description, price, rating, nb of votes)
     const drinkCont = document.createElement("div");
@@ -177,18 +178,18 @@ function displayDrinkOfTheDay(drink) {
     displayRatingStars(rating, ratingDiv);
 
     // cart icon
-    const card = document.createElement("img");
-    card.src = "images/cart.png";
-    card.alt = "cart icon";
-    card.title = "Add to cart";
-    card.style.cursor = "pointer";
-    card.classList.add("cart");
+    // const card = document.createElement("img");
+    // card.src = "images/cart.png";
+    // card.alt = "cart icon";
+    // card.title = "Add to cart";
+    // card.style.cursor = "pointer";
+    // card.classList.add("cart");
 
     // add els to the content div
     drinkCont.append(description);
     drinkCont.appendChild(priceDiv);
     drinkCont.appendChild(ratingDiv);
-    drinkCont.appendChild(card);
+    // drinkCont.appendChild(card);
     drinkCont.appendChild(ratingsNumb);
 
     // add els to the div
