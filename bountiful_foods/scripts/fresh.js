@@ -133,6 +133,7 @@ function selectedFruits() {
             return emailPattern.test(email);
         }
 
+        messageDiv.innerHTML = '';
         let errorMessages = [];
 
         if (!firstName) {
